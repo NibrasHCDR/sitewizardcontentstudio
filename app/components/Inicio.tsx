@@ -136,7 +136,7 @@ function Inicio({}: Props) {
                  animate={animacionImagen}
                   className="w-full h-full absolute transition-all">
                       <Image
-
+                       className="transition-all hover:scale-95 hover:scale-y-100 duration-300"
                        src={'https://i.postimg.cc/bv5hHYzy/device-inicio-sitewizard.png'} 
                        alt={'device'}
                        objectFit='fill'
@@ -154,7 +154,7 @@ function Inicio({}: Props) {
                   initial={{ opacity: 0, y: 0 , scale: 0}}
                   animate={animacionIcono_1}
                   className="h-auto w-auto bg-white rounded-full transition-all">
-                  <FcConferenceCall className="xl:h-[50px] xl:w-[50px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2">
+                  <FcConferenceCall className="xl:h-[50px] xl:w-[50px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2 transition-all hover:scale-105 duration-300">
                   </FcConferenceCall> 
                   </motion.div>
 
@@ -166,7 +166,7 @@ function Inicio({}: Props) {
                   initial={{ opacity: 0, y: 0, scale: 0 }}
                   animate={animacionIcono_6}
                   className="h-auto w-auto bg-white rounded-full transition-all">
-                  <FcMultipleDevices className="xl:h-[50px] xl:w-[50px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2">
+                  <FcMultipleDevices className="xl:h-[50px] xl:w-[50px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2 transition-all hover:scale-105 duration-300">
                   </FcMultipleDevices> 
                   </motion.div>
 
@@ -178,7 +178,7 @@ function Inicio({}: Props) {
                    initial={{ opacity: 0, y: 0, scale: 0 }}
                    animate={animacionIcono_2}
                    className="h-auto w-auto bg-white rounded-full transition-all">
-                  <FcGoogle className="xl:h-[65px] xl:w-[65px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2">
+                  <FcGoogle className="xl:h-[65px] xl:w-[65px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2 transition-all hover:scale-105 duration-300">
                   </FcGoogle> 
                   </motion.div>
 
@@ -190,7 +190,7 @@ function Inicio({}: Props) {
                   initial={{ opacity: 0, y: 0, scale: 0 }}
                   animate={animacionIcono_5} 
                   className="h-auto w-auto bg-white rounded-full transition-all">
-                  <FcPrivacy className="xl:h-[65px] xl:w-[65px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2">
+                  <FcPrivacy className="xl:h-[65px] xl:w-[65px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2 transition-all hover:scale-105 duration-300">
                   </FcPrivacy> 
                   </motion.div>
 
@@ -202,7 +202,7 @@ function Inicio({}: Props) {
                   initial={{ opacity: 0, y: 0, scale: 0 }}
                   animate={animacionIcono_3}
                   className="h-auto w-auto bg-white rounded-full transition-all">
-                  <FcFinePrint className="xl:h-[90px] xl:w-[90px] lg:h-[55px] lg:w-[55px] h-[25px] w-[25px] lg:m-4 m-2">
+                  <FcFinePrint className="xl:h-[90px] xl:w-[90px] lg:h-[55px] lg:w-[55px] h-[25px] w-[25px] lg:m-4 m-2 transition-all hover:scale-105 duration-300">
                   </FcFinePrint> 
                   </motion.div>
 
@@ -214,7 +214,7 @@ function Inicio({}: Props) {
                   initial={{ opacity: 0, y: 0, scale: 0 }}
                   animate={animacionIcono_4}
                   className="h-auto w-auto bg-white rounded-full transition-all">
-                  <FcAssistant className="xl:h-[90px] xl:w-[90px] lg:h-[50px] lg:w-[50px] h-[25px] w-[25px] lg:m-4 m-2">
+                  <FcAssistant className="xl:h-[90px] xl:w-[90px] lg:h-[50px] lg:w-[50px] h-[25px] w-[25px] lg:m-4 m-2 transition-all hover:scale-105 duration-300">
                   </FcAssistant> 
                   </motion.div>
 

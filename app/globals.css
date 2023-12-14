@@ -183,12 +183,56 @@
 
                    /*   HOWTOUSE MOBIL SCREEN  */
                  @media screen and (min-width: 0px) and (max-width: 431px)  {
+                  .contenedor-howtouse{
+                    display: grid;
+                    grid-gap: 1rem;
+                    /* Creamos las columnas y sus medidad*/
+                    grid-template-columns: 1fr;
+                    /* Creamos las filas y sus valores de medidas*/
+                    grid-template-rows: 0.3fr 0.3fr 1fr;
+                  }
 
+                  .howtouse-1{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                  }
+
+                  .howtouse-2{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                  }
+
+                  .howtouse-3{
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                  }
                  }
 
                   /*   HOWTOUSE TABLET SCREEN  */
                   @media screen and (min-width: 432px) and (max-width: 1023px) {
-
+                    .contenedor-howtouse{
+                      display: grid;
+                      grid-gap: 1rem;
+                      /* Creamos las columnas y sus medidad*/
+                      grid-template-columns: 1fr;
+                      /* Creamos las filas y sus valores de medidas*/
+                      grid-template-rows: 0.3fr 0.3fr 1fr;
+                    }
+  
+                    .howtouse-1{
+                      grid-column: 1/2;
+                      grid-row: 1/2;
+                    }
+  
+                    .howtouse-2{
+                      grid-column: 1/2;
+                      grid-row: 2/3;
+                    }
+  
+                    .howtouse-3{
+                      grid-column: 1/2;
+                      grid-row: 3/4;
+                    }
                   }
                   /*   HOWTOUSE DESKTOP L SCREEN  */
 
@@ -198,11 +242,11 @@
 
                     .contenedor-howtouse{
                       display: grid;
-                      grid-gap: 1rem;
+                      grid-gap: 1.5rem;
                       /* Creamos las columnas y sus medidad*/
-                      grid-template-columns: 0.6fr 1fr;
+                      grid-template-columns: 0.9fr 1fr;
                       /* Creamos las filas y sus valores de medidas*/
-                      grid-template-rows: 1fr 0.8;
+                      grid-template-rows: 0.5fr 0.5fr;
                     }
 
                     .howtouse-1{
