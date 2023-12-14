@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         afacad: ['Adacad','sans-serif'],
+        josefin: ['Josefin San','sans-serif']
       },
     },
   },
