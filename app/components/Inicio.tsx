@@ -98,9 +98,9 @@ function Inicio({}: Props) {
                  animate={animacionTexto}
                  className="h-auto w-auto transition-all">
 
-                    <h1 className="font-afacad xl:text-5xl lg:text-xl md:text-xl text-lg text-white">
+                    <h1 className="font-afacad xl:text-5xl lg:text-2xl md:text-2xl text-2xl text-white">
                         Manten el Control de Tu Sitio Web con <br></br>
-                        SiteWizard Content Studio CMS
+                        SiteWizard Sanity Content Studio CMS
                     </h1>
 
                  </motion.div>
@@ -114,12 +114,12 @@ function Inicio({}: Props) {
                  animate={animacionTexto_2}
                  className="w-auto h-auto xl:space-y-8 lg:space-y-4 space-y-2 flex flex-col transition-all">
                     <h1 className="font-afacad xl:text-2xl lg:text-md md:tet-md text-md text-white">
-                      Administra cada elemento de tú sitio
+                      Administra cada elemento de tú sitio con Sanity.io
                     </h1>
 
                   <div className="h-auto w-auto">
                     <button className={styles.button17} role="button">
-                        Obtén SiteWizard CMS
+                        Obtén SiteWizard Sanity CMS
                      </button>
                   </div>
 
