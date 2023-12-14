@@ -1,37 +1,118 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 
 import styles from '../buttons.module.css'
 
 import { FcMultipleDevices, FcGoogle, FcConferenceCall, FcFinePrint, FcPrivacy, FcAssistant } from "react-icons/fc";
+import { motion, useAnimation } from 'framer-motion';
 
 
 type Props = {}
 
 function Inicio({}: Props) {
+
+    //creamos nuestras animaciones de framer motion
+    const animacionTexto = useAnimation();
+    const animacionTexto_2 = useAnimation();
+    const animacionIcono_1 = useAnimation();
+    const animacionIcono_2 = useAnimation();
+    const animacionIcono_3 = useAnimation();
+    const animacionIcono_4 = useAnimation();
+    const animacionIcono_5 = useAnimation();
+    const animacionIcono_6 = useAnimation();
+    const animacionImagen = useAnimation();
+
+    //creamos un useefect que renderice la animación cuando se ejecute constrolsInicio1 y controlsInicio2
+    useEffect(() => {
+        const animateInicio1 = async () => {
+          await animacionIcono_1.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: 'easeInOut' },
+          });
+          await animacionIcono_2.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: 'easeInOut' },
+          });
+          await animacionIcono_3.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+          await animacionIcono_4.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+          await animacionIcono_5.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+          await animacionIcono_6.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+          await animacionTexto.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+          await animacionTexto_2.start({
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+          await animacionImagen.start({
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.2, ease: [0.6, 0.05, 0.5, 0.95] },
+          });
+        };
+        animateInicio1();
+      }, [animacionIcono_1, animacionIcono_2,animacionIcono_3,animacionIcono_4,animacionIcono_5,animacionIcono_6,animacionTexto,animacionTexto_2,animacionImagen ]);
+
+
   return (
-    <div className="w-full h-screen bg-[#2B60DA]">
+    <div className="w-full h-screen bg-gradient-to-b from-[#2B60DA] to-[#2757C6] lg:mt-12 mt-24">
 
-    <div className="h-screen w-full">
+    <div className="h-full w-full">
 
-           <div className="contenedor-inicio w-full h-screen lg:pt-24 lg:px-24 md:pt-10 md:px-10 pt-4 px-4">
+           <div className="contenedor-inicio w-full h-full lg:pt-24 lg:px-24 md:pt-10 md:px-10 pt-4 px-4">
 
             <div className="inicio-1 flex justify-center items-center w-full text-center">
              
-                 <div className="h-auto w-auto">
+                 <motion.div 
+                 initial={{ opacity: 0, y: 0, scale: 0 }}
+                 animate={animacionTexto}
+                 className="h-auto w-auto transition-all">
 
                     <h1 className="font-afacad xl:text-5xl lg:text-xl md:text-xl text-lg text-white">
                         Manten el Control de Tu Sitio Web con <br></br>
                         SiteWizard Content Studio CMS
                     </h1>
 
-                 </div>
+                 </motion.div>
 
             </div>
 
             <div className="inicio-2 flex text-center justify-center">
 
-                <div className="w-auto h-auto xl:space-y-8 lg:space-y-4 space-y-2 flex flex-col">
+                <motion.div
+                 initial={{ opacity: 0, y: 0, scale: 0 }}
+                 animate={animacionTexto_2}
+                 className="w-auto h-auto xl:space-y-8 lg:space-y-4 space-y-2 flex flex-col transition-all">
                     <h1 className="font-afacad xl:text-2xl lg:text-md md:tet-md text-md text-white">
                       Administra cada elemento de tú sitio
                     </h1>
@@ -43,78 +124,99 @@ function Inicio({}: Props) {
                   </div>
 
 
-                </div>
+                </motion.div>
 
             </div>
 
             <div className="inicio-4 w-full h-full relative">
                   
 
-                  <div className="w-full h-full absolute">
+                  <motion.div 
+                 initial={{ opacity: 0, y: 500 }}
+                 animate={animacionImagen}
+                  className="w-full h-full absolute transition-all">
                       <Image
 
-                       src={'https://i.postimg.cc/1tVnLV6g/device-inicio-sitewizard.png'} 
+                       src={'https://i.postimg.cc/bv5hHYzy/device-inicio-sitewizard.png'} 
                        alt={'device'}
                        objectFit='fill'
                        layout='fill'>
 
                       </Image>
-                  </div>
+                  </motion.div>
             
                   
             </div>
 
             <div className="inicio-5 flex justify-center items-center">
             
-                  <div className="h-auto w-auto bg-white rounded-full">
-                  <FcConferenceCall className="xl:h-[40px] xl:w-[40px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2">
+                  <motion.div 
+                  initial={{ opacity: 0, y: 0 , scale: 0}}
+                  animate={animacionIcono_1}
+                  className="h-auto w-auto bg-white rounded-full transition-all">
+                  <FcConferenceCall className="xl:h-[50px] xl:w-[50px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2">
                   </FcConferenceCall> 
-                  </div>
+                  </motion.div>
 
             </div>
 
             <div className="inicio-6 flex justify-center items-center">
             
-                  <div className="h-auto w-auto bg-white rounded-full">
-                  <FcMultipleDevices className="xl:h-[40px] xl:w-[40px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2">
+                  <motion.div 
+                  initial={{ opacity: 0, y: 0, scale: 0 }}
+                  animate={animacionIcono_6}
+                  className="h-auto w-auto bg-white rounded-full transition-all">
+                  <FcMultipleDevices className="xl:h-[50px] xl:w-[50px] lg:h-[25px] lg:w-[25px] h-[25px] w-[25px] lg:m-2 m-2">
                   </FcMultipleDevices> 
-                  </div>
+                  </motion.div>
 
             </div>
             
             <div className="inicio-7 flex justify-center items-center">
             
-                  <div className="h-auto w-auto bg-white rounded-full">
-                  <FcGoogle className="xl:h-[55px] xl:w-[55px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2">
+                  <motion.div
+                   initial={{ opacity: 0, y: 0, scale: 0 }}
+                   animate={animacionIcono_2}
+                   className="h-auto w-auto bg-white rounded-full transition-all">
+                  <FcGoogle className="xl:h-[65px] xl:w-[65px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2">
                   </FcGoogle> 
-                  </div>
+                  </motion.div>
 
             </div>
 
             <div className="inicio-8 flex justify-center items-center">
             
-                  <div className="h-auto w-auto bg-white rounded-full">
-                  <FcPrivacy className="xl:h-[55px] xl:w-[55px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2">
+                  <motion.div
+                  initial={{ opacity: 0, y: 0, scale: 0 }}
+                  animate={animacionIcono_5} 
+                  className="h-auto w-auto bg-white rounded-full transition-all">
+                  <FcPrivacy className="xl:h-[65px] xl:w-[65px] lg:h-[35px] lg:w-[35px] h-[25px] w-[25px] lg:m-3 m-2">
                   </FcPrivacy> 
-                  </div>
+                  </motion.div>
 
             </div>
 
             <div className="inicio-9 flex justify-center items-center">
             
-                  <div className="h-auto w-auto bg-white rounded-full">
-                  <FcFinePrint className="xl:h-[80px] xl:w-[80px] lg:h-[55px] lg:w-[55px] h-[25px] w-[25px] lg:m-4 m-2">
+                  <motion.div 
+                  initial={{ opacity: 0, y: 0, scale: 0 }}
+                  animate={animacionIcono_3}
+                  className="h-auto w-auto bg-white rounded-full transition-all">
+                  <FcFinePrint className="xl:h-[90px] xl:w-[90px] lg:h-[55px] lg:w-[55px] h-[25px] w-[25px] lg:m-4 m-2">
                   </FcFinePrint> 
-                  </div>
+                  </motion.div>
 
             </div>
 
             <div className="inicio-10 flex justify-center items-center">
             
-                  <div className="h-auto w-auto bg-white rounded-full">
-                  <FcAssistant className="xl:h-[80px] xl:w-[80px] lg:h-[50px] lg:w-[50px] h-[25px] w-[25px] lg:m-4 m-2">
+                  <motion.div 
+                  initial={{ opacity: 0, y: 0, scale: 0 }}
+                  animate={animacionIcono_4}
+                  className="h-auto w-auto bg-white rounded-full transition-all">
+                  <FcAssistant className="xl:h-[90px] xl:w-[90px] lg:h-[50px] lg:w-[50px] h-[25px] w-[25px] lg:m-4 m-2">
                   </FcAssistant> 
-                  </div>
+                  </motion.div>
 
             </div>
 

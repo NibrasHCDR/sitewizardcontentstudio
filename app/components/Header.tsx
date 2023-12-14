@@ -5,12 +5,8 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { motion } from 'framer-motion'
 
-interface SeccionData {
-  texto1: string;
-  texto2: string;
-  texto3: string;
-  texto4: string;
-}
+import styles from '../buttons.module.css'
+
 
 type Props = {}
 
@@ -37,12 +33,11 @@ function Header({}: Props) {
   };
 
     const [nav, setNav] = useState(false);
-    const [color, setColor] = useState('transparent')
+    const [color, setColor] = useState('#2B60DA')
     const [textColor, setTextColor] = useState('white')
     const [tamañoNav, setTamañoNav] = useState("w-full h-[115px] max-w- fixed left-0 top-0 z-10 ease-in duration-300")
-    const [seccion, setSeccion] = useState<SeccionData | null>(null);
     const [tamañoLogo, setTamañoLogo] = useState("w-[240px] h-[70px] no-select hover:scale-105 transition-all duration-500 cursor-default")
-    const [tamañoTexto, setTamañoTexto] = useState("inline-block hover:scale-105 border-[#29F2CD] hover:text-[#29F2CD] lg:text-lg xl:text-xl text-xs pt-4 font-medium uppercase leading-normal text-primary transition-all duration-300 hover:bg-opacity-[2%]  hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 font-unicaone")
+    const [tamañoTexto, setTamañoTexto] = useState("font-afacad")
 
 
     const handleNav = () => {
@@ -52,17 +47,17 @@ function Header({}: Props) {
 useEffect(() => {
      const changeColor = () => {
         if(window.scrollY >= 90) {
-            setColor('#010101')
+            setColor('#2B60DA')
             setTextColor('#F7F7F7')
-            setTamañoNav("w-full h-[82px] max-w-auto fixed left-0 top-0 z-10 shadow-xl ease-in duration-300 shadow-[#29F2CD]/30 shadow-lg")
+            setTamañoNav("w-full h-[82px] max-w-auto fixed left-0 top-0 z-10 shadow-xl ease-in duration-300 shadow-white/40 shadow-lg")
             setTamañoLogo("w-[200px] h-[50px] no-select hover:scale-105 transition-all duration-500 cursor-default")
-            setTamañoTexto("inline-block hover:scale-105 border-[#29F2CD] hover:text-[#29F2CD] lg:text-lg xl:text-xl text-xs pt-2 font-medium uppercase leading-normal text-primary transition-all duration-300 hover:bg-opacity-[2%] hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 font-unicaone")
+            setTamañoTexto("font-afacad")
         } else {
-            setColor('transparent')
+            setColor('#2B60DA')
             setTextColor('#ffffff')
             setTamañoNav("w-full h-[115px] fixed left-0 top-0 z-10 ease-in duration-300")
             setTamañoLogo("w-[240px] h-[70px] no-select hover:scale-105 transition-all duration-500 cursor-default")
-            setTamañoTexto("inline-block hover:scale-105 border-[#29F2CD] hover:text-[#29F2CD] lg:text-lg xl:text-xl text-xs pt-4 font-medium uppercase leading-normal text-primary transition-all duration-300 hover:bg-opacity-[2%]  hover:border-primary-600 focus:border-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 font-unicaone")
+            setTamañoTexto("font-afacad")
         }
      };
      window.addEventListener('scroll', changeColor);
@@ -70,62 +65,59 @@ useEffect(() => {
 
 
   return (
-    <motion.div 
-    initial={{ opacity: 0, x: -350 }}
-    animate={{ opacity: 1.2, x: 0 }}
-    transition={{ duration: 0.5, ease: [0.6, 0.05, 0.5, 0.95] }} // Duración de la animación
+    <div 
+// Duración de la animación
     style={{backgroundColor: `${color}` }}
      className={tamañoNav}
      >
-        <div className="max-w-[1240px] no-select mx-auto h-auto w-auto flex justify-between items-center p-4 text-white">
+        <motion.div 
+            initial={{ opacity: 0, x: 0 }}
+            animate={{ opacity: 1.2, x: 0 }}
+            transition={{ duration: 1.5, ease: [0.6, 0.05, 0.5, 0.95] }} 
+        className="max-w-[1240px] no-select mx-auto h-auto w-auto flex justify-between items-center p-4 text-white">
             <Link href="https://xplendev.com/" className="no-select cursor-pointer">
             <motion.img 
               className={tamañoLogo + "cursor-pointer"}
-              src="https://i.postimg.cc/V6PqVmNk/xplendev-newlogotransparent.png"
+              src="https://i.postimg.cc/Cx6fwg43/sitewizard-logo2.png"
               >
               </motion.img>
             </Link>
-            <ul style={{color: `${textColor}`}} className="hidden sm:flex">
-                <li className="p-4">
+            <ul style={{color: `${textColor}`}} className="hidden lg:flex justify-end items-end lg:space-x-8 space-x-2">
+                <li className="pt-4">
                 <Link href="/obras">
                 <button type="button"
                         className={tamañoTexto}
-                        data-te-ripple-init>Nuestras Obras</button>
+                        data-te-ripple-init>About us</button>
                 </Link>
                 </li>
-                <li className="p-4">
+                <li className="">
                 <Link href={"/mundodigital"}>
                 <button type="button"
                         className={tamañoTexto}
-                        data-te-ripple-init>Mundo Digital</button>
+                        data-te-ripple-init>How to use</button>
                 </Link>
                 </li>
-                <li className="p-4">
+                <li className="">
                 <button type="button"
                         className={tamañoTexto}
                         onClick={handleButtonClick0}
-                        data-te-ripple-init>Diseños</button>
+                        data-te-ripple-init>Membership</button>
                 </li>
 
-                <li className="p-4">
-                <button type="button"
-                        className={tamañoTexto}
-                        onClick={handleButtonClick}
-                        data-te-ripple-init>Membersías
-                        </button>
-                </li>
-
-                <li className="p-4">
-                <button type="button"
-                        className={tamañoTexto}
-                        onClick={handleButtonClick2}
-                        data-te-ripple-init>Contacto</button>
-                </li>
+                
 
             </ul>
 
+            <div className="hidden lg:flex w-[240px] h-[70px] justify-between items-center">
+               
+               <button className={styles.button17}>
+                Contactanos
+               </button>
+
+            </div>
+
             {/* Botones Móviles */}
-            <button onClick={handleNav} className="block sm:hidden z-10 hover:scale-150 hover:text-[#29F2CD] transition duration-150 ease-in-out">
+            <button onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#29F2CD] transition duration-150 ease-in-out">
                 {nav
                  ? <AiOutlineClose size={25} /> 
                  : <AiOutlineMenu  size={25} style={{color: `${textColor}`}}
@@ -145,7 +137,7 @@ useEffect(() => {
             <Link href={"/obras"}>
             <li>
               <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
-              Nuestras Obras
+              About us
               </button>
               </li>
               </Link>
@@ -153,26 +145,21 @@ useEffect(() => {
               <Link href={"/mundodigital"}>
               <li>
               <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
-              Mundo Digital
+              How to use
               </button>
               </li>
                 </Link>
 
                 <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
-                <button onClick={handleButtonClick0}>Diseños</button>
+                <button onClick={handleButtonClick0}>
+                  Membersip
+                </button>
                 </li>
 
-                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
-                <button onClick={handleButtonClick}>Membersías</button>
-                </li>
-
-                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
-                <button onClick={handleButtonClick2}>Contacto</button>
-                </li>
             </ul>
             </div>
-        </div>
-    </motion.div>
+        </motion.div>
+    </div>
   )
 }
 
