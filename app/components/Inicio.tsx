@@ -30,54 +30,54 @@ function Inicio({}: Props) {
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: 'easeInOut' },
+            transition: { duration: 0.05, ease: 'easeInOut' },
           });
           await animacionIcono_2.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: 'easeInOut' },
+            transition: { duration: 0.05, ease: 'easeInOut' },
           });
           await animacionIcono_3.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.05, ease: [0.6, 0.05, 0.5, 0.95] },
           });
           await animacionIcono_4.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.05, ease: [0.6, 0.05, 0.5, 0.95] },
           });
           await animacionIcono_5.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.05, ease: [0.6, 0.05, 0.5, 0.95] },
           });
           await animacionIcono_6.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.05, ease: [0.6, 0.05, 0.5, 0.95] },
           });
           await animacionTexto.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.05, ease: [0.6, 0.05, 0.5, 0.95] },
           });
           await animacionTexto_2.start({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.05, ease: [0.6, 0.05, 0.5, 0.95] },
           });
           await animacionImagen.start({
             opacity: 1,
             y: 0,
-            transition: { duration: 0.2, ease: [0.6, 0.05, 0.5, 0.95] },
+            transition: { duration: 0.1, ease: [0.6, 0.05, 0.5, 0.95] },
           });
         };
         animateInicio1();
