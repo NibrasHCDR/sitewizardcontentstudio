@@ -23,7 +23,7 @@ function Howtouse2({}: Props) {
 
                      <div className="howtouse2-1 space-y-4 flex flex-col text-center lg:text-start">
                          
-                         <h1 className="font-josefin xl:text-5xl lg:text-2xl md:text-2xl text-2xl">
+                         <h1 className="font-signika xl:text-5xl lg:text-2xl md:text-2xl text-2xl">
                             Gestiona el contenido de tu web desde cualquier dispositivo con conexión a internet de manera segura
                         </h1>
 
@@ -37,27 +37,27 @@ function Howtouse2({}: Props) {
 
                      <div className="howtouse2-2 flex lg:justify-start justify-center items-center lg:items-start space-x-4">
 
-                      <div className="xl:w-[140px] xl:h-[140px] w-[80px] h-[80px] flex items-center rounded-full justify-center bg-[#2B60DA]">
+                      <div className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#2B60DA]">
 
-                        <MdAdminPanelSettings className="xl:h-[80px] xl:w-[80px] w-[40px] h-[40px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                        <MdAdminPanelSettings className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
                         </MdAdminPanelSettings>
 
 
                       </div>
 
-                       <div className="xl:w-[140px] xl:h-[140px] w-[80px] h-[80px] flex items-center rounded-full justify-center bg-[#FFC107]">
+                       <div className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#FFC107]">
 
-                        <MdDevices className="xl:h-[80px] xl:w-[80px] w-[40px] h-[40px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                        <MdDevices className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
                         </MdDevices>
 
 
                       </div>
 
-                         <div className="xl:w-[140px] xl:h-[140px] w-[80px] h-[80px] flex items-center rounded-full justify-center bg-[#00B6DB]">
+                         <div className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#00B6DB]">
 
-                           <BiCustomize className="xl:h-[80px] xl:w-[80px] w-[40px] h-[40px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                           <BiCustomize className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
                            </BiCustomize>
 

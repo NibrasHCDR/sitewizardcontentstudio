@@ -98,7 +98,7 @@ function Inicio({}: Props) {
                  animate={animacionTexto}
                  className="h-auto w-auto transition-all">
 
-                    <h1 className="font-afacad xl:text-5xl lg:text-2xl md:text-2xl text-2xl text-white">
+                    <h1 className="xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl text-white">
                         Manten el Control de Tu Sitio Web con <br></br>
                         SiteWizard Sanity Content Studio CMS
                     </h1>

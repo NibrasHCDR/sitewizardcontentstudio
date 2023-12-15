@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       fontFamily: {
         afacad: ['Adacad','sans-serif'],
-        josefin: ['Josefin San','sans-serif']
+        josefin: ['Josefin San','sans-serif'],
+        signika: ['Signika Negative','sans-serif'],
+        rubik: ['Rubik','sans-serif'],
+        garamond: ['EB Garamond','serif']
       },
     },
   },

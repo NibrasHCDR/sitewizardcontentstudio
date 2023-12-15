@@ -3,6 +3,8 @@ import Inicio from './components/Inicio'
 import Header from './components/Header'
 import Howtouse from './components/Howtouse'
 import Howtouse2 from './components/Howtouse2'
+import Aboutus from './components/Aboutus'
+import About from './components/About'
 
 export default function Home() {
   return (
@@ -20,6 +22,18 @@ export default function Home() {
       <Inicio>
 
       </Inicio>
+    </section>
+
+    <section id="about">      
+      <About>
+
+      </About>
+    </section>
+
+    <section id="aboutus">      
+      <Aboutus>
+
+      </Aboutus>
     </section>
 
     <section id="howtouse">      

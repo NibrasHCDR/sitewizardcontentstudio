@@ -23,7 +23,7 @@ function Howtouse({}: Props) {
 
                      <div className="howtouse-1 space-y-4 flex flex-col text-center lg:text-start">
                          
-                         <h1 className="font-josefin xl:text-5xl lg:text-2xl md:text-2xl text-2xl">
+                         <h1 className="font-signika xl:text-5xl lg:text-2xl md:text-2xl text-2xl">
                             Conoce como utilizar SiteWizard Sanity para gestionar en su totalidad tu sitio web
                         </h1>
 
@@ -37,25 +37,25 @@ function Howtouse({}: Props) {
 
                      <div className="howtouse-2 flex lg:justify-start justify-center items-center lg:items-start space-x-4">
 
-                      <div className="xl:w-[140px] xl:h-[140px] w-[80px] h-[80px] flex items-center rounded-full justify-center bg-[#2B60DA]">
+                      <div className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#2B60DA]">
 
-                        <IoLogoYoutube className="xl:h-[80px] xl:w-[80px] w-[40px] h-[40px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                        <IoLogoYoutube className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
                         </IoLogoYoutube>
 
                       </div>
 
-                        <div className="xl:w-[140px] xl:h-[140px] w-[80px] h-[80px] flex items-center rounded-full justify-center bg-[#FFC107]">
+                        <div className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#FFC107]">
 
-                            <LuFileEdit className="xl:h-[80px] xl:w-[80px] w-[40px] h-[40px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                            <LuFileEdit className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
                             </LuFileEdit>
 
                       </div>
 
-                         <div className="xl:w-[140px] xl:h-[140px] w-[80px] h-[80px] flex items-center rounded-full justify-center bg-[#00B6DB]">
+                         <div className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#00B6DB]">
 
-                            <MdPublish className="xl:h-[80px] xl:w-[80px] w-[40px] h-[40px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                            <MdPublish className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
                             </MdPublish>
 
