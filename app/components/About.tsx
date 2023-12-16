@@ -5,12 +5,13 @@ import styles from '../buttons.module.css'
 
 import { AiOutlineAntDesign } from "react-icons/ai";
 import Image from 'next/image'
+import Link from 'next/link';
 
 type Props = {}
 
 function About({}: Props) {
   return (
-    <div className="w-full h-screen bg-gradient-to-r from-[#2B60DA]/20 via-white to-[#2B60DA]/20">
+    <div className="w-full h-full bg-gradient-to-r from-[#2B60DA]/20 via-white to-[#2B60DA]/20">
 
                 <div className="w-full h-full lg:p-24 md:p-10 p-4">
 
@@ -31,7 +32,7 @@ function About({}: Props) {
                             <div className="flex flex-col xl:pt-11 lg:pt-11">
 
                                 <h1 className="text-white font-garamond xl:text-lg lg:text-base md:text-sm text-sm">
-                                  Un servicio de paginación web debe resolver la incognita de: ¿Y ahora qué?. Desde la implementación completa del sitio hasta la administración, lo logramos con Xplendev & SiteWizard! ⟶
+                                Un servicio de paginación web no solo resuelve la implementación de un sitio, sino que se enfrenta al desafío de mantenerlo vivo. Con Xplendev & SiteWizard, no solo aseguramos la implementación completa de tu sitio web, sino que también te ofrecemos la administración integral del mismo.
                                 </h1>
 
                             </div>
@@ -60,8 +61,7 @@ function About({}: Props) {
                             <div className="flex flex-col">
 
                                 <h1 className="text-black font-garamond xl:text-lg lg:text-base md:text-sm text-sm">
-                                  Con Xplendev creamos tu sitio Web desde 0.
-                                  Nos encargamos de diseñar junto a tí el diseño que más se adapte a tus necesidades, logrando diseños complentamente responsivos y animados!. Ahora , ¿Como lo administras? ... ⟶
+                                En Xplendev, creamos tu sitio web desde cero. Nos involucramos contigo en el proceso de diseño para desarrollar una plataforma que se ajuste perfectamente a tus necesidades. Nuestro enfoque se basa en diseños responsivos y dinámicos, adaptados a la perfección para ti. Ahora, ¿cómo lo administras? ... ⟶
                                 </h1>
 
                             </div>
@@ -93,7 +93,7 @@ function About({}: Props) {
                           <div className="flex flex-col">
 
                               <h1 className="text-black font-garamond xl:text-lg lg:text-base md:text-sm text-sm">
-                                ...Cuando la codificación del diseño del producto está lista, implementamos SiteWizard Sanity Content Studio, este CMS permite administrar el contenido completo de tu sitio web desde textos y botónes a imágenes
+                              ... Una vez que el diseño del producto está codificado, implementamos SiteWizard Sanity Content Studio. Este CMS te brinda el control total sobre el contenido de tu sitio web, desde textos y botones hasta imágenes y más. Con esta herramienta, gestionar y actualizar tu contenido es sencillo y completo.
                               </h1>
 
                           </div>
@@ -105,11 +105,16 @@ function About({}: Props) {
 
 
 
-                      <div className="about-4 ">
+                      <div className="about-4 pt-4">
+
+                        <div className="flex justify-center items-center">
+                        <Image className="w-[140px] h-[80px] text-white rounded-full " src={'https://i.postimg.cc/gkFtQnvR/arrow-gif.gif'} width={1080} height={1080} alt={''}>
+                          </Image>
+                        </div>
 
                     </div>
   
-                    <div className="about-5 justify-center items-center flex pt-8">
+                    <div className="about-5 justify-center items-center text-center flex pt-8">
                     <div className="h-auto w-auto">
                         <h1 className="xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl"> 
                           Así funciona nuestro servicio de sitios web
@@ -117,7 +122,7 @@ function About({}: Props) {
                       </div>
                     </div>
 
-                    <div className="about-6 justify-center items-center flex">
+                    <div className="about-6 justify-center items-center text-center flex">
                       
                       <div className="h-auto w-auto">
                         <h1 className="font-rubik xl:text-lg lg:text-lg md:text-base text-base pb-2 text-[#2757C6]"> 
@@ -130,9 +135,11 @@ function About({}: Props) {
 
                     <div className="about-7 flex justify-center items-center">
                     <div className="h-auto w-auto">
-                    <button className={styles.button17} role="button">
+                      <Link href={'https://xplendev.com'}>
+                    <button title='Ir a Xplendev.com' className={styles.button17} role="button">
                         Ir a Xplendev.com
                      </button>
+                     </Link>
                   </div>
                     </div>
 
