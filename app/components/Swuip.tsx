@@ -29,7 +29,7 @@ export default function Swuip() {
         className="lg:w-full lg:h-[420px]"
       >
 
-               <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[305px] ${style.swiperSlide}`}>
+               <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[305px] min-h-[378px] no-select cursor-grab ${style.swiperSlide}`}>
 
                   <div className="w-full h-full p-2 flex flex-col space-y-2">
 
@@ -55,7 +55,7 @@ export default function Swuip() {
                       <div className="flex w-full h-full justify-evenly px-6">
 
                          <Image 
-                         className="w-[130px] h-[125px] rounded-full bg-black border-4 border-white"
+                         className="w-[130px] h-[130px] rounded-full bg-black border-4 border-white"
                          height={450}
                          width={450}
                          layout='cover'
@@ -66,7 +66,7 @@ export default function Swuip() {
                          </Image>
 
                          <Image 
-                         className="w-[130px] h-[125px] rounded-full bg-black border-4 border-white"
+                         className="w-[130px] h-[130px] rounded-full bg-black border-4 border-white"
                          height={450}
                          width={450}
                          layout='cover'
@@ -87,7 +87,7 @@ export default function Swuip() {
 
         </SwiperSlide>
         
-        <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[305px] ${style.swiperSlide}`}>
+        <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[305px] min-h-[378px] no-select cursor-grab ${style.swiperSlide}`}>
 
                   <div className="w-full h-full p-2 flex flex-col space-y-2">
 
@@ -105,14 +105,14 @@ export default function Swuip() {
 
 
                       <h1 className="font-garamond xl:text-lg lg:text-base md:text-sm text-sm pb-2 px-6">
-                        Xplendev.com parte el 2023 con el objetivo de brindar servicios de paginación web profesionales. <br />
+                        Xplendev.com parte con el objetivo principal de brindar servicios de paginación web profesionales. <br />
                         Actualmente Xplendev es potenciado por SiteWizard Sanity Estudio entregando servicios de excelencia en calidad.
                       </h1>
 
                       <div className="flex w-full h-full space-x-2 space-y-4 px-6">
 
                          <Image 
-                         className="w-[130px] h-[125px] rounded-full bg-black border-4 border-white"
+                         className="w-[130px] h-[130px] rounded-full bg-black border-4 border-white"
                          height={450}
                          width={450}
                          layout='cover'

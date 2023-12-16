@@ -73,7 +73,7 @@ useEffect(() => {
         <motion.div 
             initial={{ opacity: 0, x: 0 }}
             animate={{ opacity: 1.2, x: 0 }}
-            transition={{ duration: 1.5, ease: [0.6, 0.05, 0.5, 0.95] }} 
+            transition={{ duration: 1, ease: [0.6, 0.05, 0.5, 0.95] }} 
         className="max-w-[1240px] no-select mx-auto h-auto w-auto flex justify-between items-center p-4 text-white">
             <Link href="https://xplendev.com/" className="no-select cursor-pointer">
             <motion.img 

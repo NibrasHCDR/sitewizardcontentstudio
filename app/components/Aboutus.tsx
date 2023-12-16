@@ -9,7 +9,7 @@ function Aboutus({}: Props) {
 
         <div className="w-full h-full">
 
-        <div className="contenedor-aboutus w-full h-full">
+        <div className="contenedor-aboutus w-full h-full no-select">
 
             <div className="aboutus-1 bg-[#2757C6] lg:rounded-br-full lg:rounded-tr-full">
 
@@ -19,7 +19,7 @@ function Aboutus({}: Props) {
        
             </div>
 
-            <div className="aboutus-3 w-full h-full flex justify-start items-center p-8 lg:p-0 xl:p-0">
+            <div className="aboutus-3 w-full h-full flex justify-start items-center p-8 lg:p-0 xl:p-0 no-select">
             
                 <Swuip ></Swuip>
             </div>
