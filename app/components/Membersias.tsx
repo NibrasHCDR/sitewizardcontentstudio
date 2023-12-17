@@ -4,6 +4,10 @@ import styles from '../buttons.module.css'
 
 import { HiBadgeCheck } from "react-icons/hi";
 
+import { FcTemplate } from "react-icons/fc";
+
+import Image from 'next/image';
+
 type Props = {}
 
 function Membersias({}: Props) {
@@ -78,8 +82,32 @@ function Membersias({}: Props) {
 
                           <div className="w-full h-auto flex space-x-2">
 
-                            <h1 className="">Compa</h1>
-                            <h1 className="">Compa</h1>
+                            <Image 
+                            className="w-[58px] h-[58px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/yNf9v8Sg/page-1.gif'} 
+                            alt={'design'}>
+                                 
+                            </Image>
+
+                            <Image 
+                            className="w-[58px] h-[58px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/rmc9nNch/domain-1.gif'} 
+                            alt={'database'}>
+                                 
+                            </Image>
+
+                            <Image 
+                            className="w-[58px] h-[57px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/SxxF5cQx/database-1.gif'} 
+                            alt={'domain'}>
+                                 
+                            </Image>
 
                           </div>
 
@@ -203,9 +231,41 @@ function Membersias({}: Props) {
                 <div className="w-full h-full flex flex-col space-y-4">
 
                           <div className="w-full h-auto flex space-x-2">
+                          <Image 
+                            className="w-[58px] h-[58px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/yNf9v8Sg/page-1.gif'} 
+                            alt={'design'}>
+                                 
+                            </Image>
 
-                            <h1 className="">Compa</h1>
-                            <h1 className="">Compa</h1>
+                            <Image 
+                            className="w-[58px] h-[58px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/rmc9nNch/domain-1.gif'} 
+                            alt={'database'}>
+                                 
+                            </Image>
+
+                            <Image 
+                            className="w-[58px] h-[57px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/SxxF5cQx/database-1.gif'} 
+                            alt={'domain'}>
+
+                            </Image>
+
+                            <Image 
+                            className="w-[58px] h-[57px]" 
+                            height={450}
+                            width={450}
+                            src={'https://i.postimg.cc/k5FnP73n/cms-1.gif'} 
+                            alt={'cms'}>
+
+                            </Image>
 
                           </div>
 

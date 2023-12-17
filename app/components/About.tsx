@@ -31,7 +31,7 @@ function About({}: Props) {
 
                             <div className="flex flex-col xl:pt-11 lg:pt-11">
 
-                                <h1 className="text-white font-garamond xl:text-lg lg:text-base md:text-sm text-sm">
+                                <h1 className="text-white xl:text-lg lg:text-lg text-base">
                                 Un servicio de paginación web no solo resuelve la implementación de un sitio, sino que se enfrenta al desafío de mantenerlo vivo. Con Xplendev & SiteWizard, no solo aseguramos la implementación completa de tu sitio web, sino que también te ofrecemos la administración integral del mismo.
                                 </h1>
 
@@ -60,7 +60,7 @@ function About({}: Props) {
 
                             <div className="flex flex-col">
 
-                                <h1 className="text-black font-garamond xl:text-lg lg:text-base md:text-sm text-sm">
+                                <h1 className="text-black font-afacad xl:text-lg lg:text-lg text-base">
                                 En Xplendev, creamos tu sitio web desde cero. Nos involucramos contigo en el proceso de diseño para desarrollar una plataforma que se ajuste perfectamente a tus necesidades. Nuestro enfoque se basa en diseños responsivos y dinámicos, adaptados a la perfección para ti. Ahora, ¿cómo lo administras? ... ⟶
                                 </h1>
 
@@ -92,7 +92,7 @@ function About({}: Props) {
 
                           <div className="flex flex-col">
 
-                              <h1 className="text-black font-garamond xl:text-lg lg:text-base md:text-sm text-sm">
+                              <h1 className="text-black font-afacad xl:text-lg lg:text-lg text-base">
                               ... Una vez que el diseño del producto está codificado, implementamos SiteWizard Sanity Content Studio. Este CMS te brinda el control total sobre el contenido de tu sitio web, desde textos y botones hasta imágenes y más. Con esta herramienta, gestionar y actualizar tu contenido es sencillo y completo.
                               </h1>
 

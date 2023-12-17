@@ -42,7 +42,7 @@ function Aboutus({}: Props) {
                     Conoce como combinamos diseño y funcionaidad
                     </h1>
 
-                    <p className="font-afacad xl:text-xl lg:text-md md:tet-md text-md text-white">
+                    <p className="font-afacad xl:text-xl lg:text-xl text-base text-white">
                       Acá ya tenemos un parrafo mas lárgo pero que <br />
                       de igual manera debe tener saltos de linea y debe tener una cantidad <br />
                       mas considerable debido a que necesitamos crear un contenido que esté <br />

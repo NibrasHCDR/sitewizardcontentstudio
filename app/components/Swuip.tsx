@@ -46,7 +46,7 @@ export default function Swuip() {
                       </Image> 
 
 
-                      <h1 className="font-garamond xl:text-lg lg:text-base md:text-sm text-sm pb-2 px-6">
+                      <h1 className="font-afacad xl:text-lg lg:text-lg text-base px-6">
                         SiteWizard Sanity Content Studio nace de la necesidad de administración de un sitio web sin necesidad de conocer el código. <br />
                         La facil administración del contenido de tu sitio es importante para nosotros, con Sanity lo hacemos realidad
                         <br />
@@ -104,7 +104,7 @@ export default function Swuip() {
                       </Image> 
 
 
-                      <h1 className="font-garamond xl:text-lg lg:text-base md:text-sm text-sm pb-2 px-6">
+                      <h1 className="font-afacad xl:text-lg lg:text-lg text-base px-6">
                         Xplendev.com parte con el objetivo principal de brindar servicios de paginación web profesionales. <br />
                         Actualmente Xplendev es potenciado por SiteWizard Sanity Estudio entregando servicios de excelencia en calidad.
                       </h1>

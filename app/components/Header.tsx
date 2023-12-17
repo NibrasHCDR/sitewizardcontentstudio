@@ -87,20 +87,20 @@ useEffect(() => {
                 <li className="pt-4">
                 <Link href="/obras">
                 <button type="button"
-                        className={tamañoTexto}
+                        className="font-afacad xl:text-xl lg:text-xl text-base"
                         data-te-ripple-init>About us</button>
                 </Link>
                 </li>
                 <li className="">
                 <Link href={"/mundodigital"}>
                 <button type="button"
-                        className={tamañoTexto}
+                        className="font-afacad xl:text-xl lg:text-xl text-base"
                         data-te-ripple-init>How to use</button>
                 </Link>
                 </li>
                 <li className="">
                 <button type="button"
-                        className={tamañoTexto}
+                        className="font-afacad xl:text-xl lg:text-xl text-base"
                         onClick={handleButtonClick0}
                         data-te-ripple-init>Membership</button>
                 </li>
@@ -118,7 +118,7 @@ useEffect(() => {
             </div>
 
             {/* Botones Móviles */}
-            <button title='comon' onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#29F2CD] transition duration-150 ease-in-out">
+            <button title='comon' onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#2B60DA] transition duration-150 ease-in-out">
                 {nav
                  ? <AiOutlineClose size={25} /> 
                  : <AiOutlineMenu  size={25} style={{color: `${textColor}`}}
@@ -137,7 +137,7 @@ useEffect(() => {
             <ul>
             <Link href={"/obras"}>
             <li>
-              <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
+              <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
               About us
               </button>
               </li>
@@ -145,13 +145,13 @@ useEffect(() => {
 
               <Link href={"/mundodigital"}>
               <li>
-              <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
+              <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
               How to use
               </button>
               </li>
                 </Link>
 
-                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#29F2CD] transition duration-150 ease-in-out hover:scale-125">
+                <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
                 <button onClick={handleButtonClick0}>
                   Membersip
                 </button>

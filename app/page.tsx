@@ -6,6 +6,7 @@ import Howtouse2 from './components/Howtouse2'
 import Aboutus from './components/Aboutus'
 import About from './components/About'
 import Membersias from './components/Membersias'
+import Contacto from './components/Contacto'
 
 export default function Home() {
   return (
@@ -53,6 +54,12 @@ export default function Home() {
       <Membersias>
 
       </Membersias>
+    </section>
+
+    <section id="contacto">      
+      <Contacto>
+
+      </Contacto>
     </section>
 
 
