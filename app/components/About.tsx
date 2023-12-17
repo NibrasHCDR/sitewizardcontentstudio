@@ -17,7 +17,7 @@ function About({}: Props) {
 
                   <div className="contenedor-about w-full h-full">
 
-                      <div className="about-1 bg-[#2757C6] mx-1 rounded-md">
+                      <div className="about-1 bg-[#2757C6] mx-1 rounded-md hover:scale-105 transition-all duration-300 no-select">
                       
                          <div className="flex flex-col p-8 xl:pt-[70px] lg:pt-[80px] space-y-4">
 
@@ -42,7 +42,7 @@ function About({}: Props) {
                            
                       </div>
 
-                      <div className="about-2 bg-white mx-1 border-2 border-[#2757C6] rounded-xl">
+                      <div className="about-2 bg-white mx-1 border-2 border-[#2757C6] rounded-xl hover:scale-105 transition-all duration-300 no-select">
 
                       <div className="flex flex-col p-8 space-y-4">
 
@@ -73,7 +73,7 @@ function About({}: Props) {
 
 
 
-                      <div className="about-3 bg-white border-2 border-[#2757C6] rounded-xl mx-1">
+                      <div className="about-3 bg-white border-2 border-[#2757C6] rounded-xl mx-1 hover:scale-105 transition-all duration-300 no-select">
 
 
                       <div className="flex flex-col p-8 space-y-4">
