@@ -5,6 +5,7 @@ import Howtouse from './components/Howtouse'
 import Howtouse2 from './components/Howtouse2'
 import Aboutus from './components/Aboutus'
 import About from './components/About'
+import Membersias from './components/Membersias'
 
 export default function Home() {
   return (
@@ -47,6 +48,13 @@ export default function Home() {
 
       </Howtouse2>
     </section>
+
+    <section id="membersias">      
+      <Membersias>
+
+      </Membersias>
+    </section>
+
 
     </>
   )

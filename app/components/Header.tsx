@@ -77,6 +77,7 @@ useEffect(() => {
         className="max-w-[1240px] no-select mx-auto h-auto w-auto flex justify-between items-center p-4 text-white">
             <Link href="https://xplendev.com/" className="no-select cursor-pointer">
             <motion.img 
+              title='comon'
               className={tamañoLogo + "cursor-pointer"}
               src="https://i.postimg.cc/Cx6fwg43/sitewizard-logo2.png"
               >
@@ -117,7 +118,7 @@ useEffect(() => {
             </div>
 
             {/* Botones Móviles */}
-            <button onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#29F2CD] transition duration-150 ease-in-out">
+            <button title='comon' onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#29F2CD] transition duration-150 ease-in-out">
                 {nav
                  ? <AiOutlineClose size={25} /> 
                  : <AiOutlineMenu  size={25} style={{color: `${textColor}`}}
