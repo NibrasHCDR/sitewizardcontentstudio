@@ -14,6 +14,8 @@ type Props = {}
 
 function Membersias({}: Props) {
 
+    const [isVisible, setVisible] = useState("overflow-hidden");
+
     const [isHovered, setHovered] = useState(false);
     const [isButtonHovered, setButtonHovered] = useState(false);
 
@@ -54,34 +56,43 @@ function Membersias({}: Props) {
       useEffect(() => {
         if (inView1) {
           controls.start({
-            x: 0
+            x: 0,
+            opacity: 1
           }),
           controls3.start({
-            x: 0
+            x: 0,
+            opacity: 1
           })
         }else {
           controls.start({
-            x: -800
+            x: -300,
+            opacity: 0
           }),
           controls3.start({
-            x: -800
+            x: -300,
+            opacity: 0
           })
         }
       }, [controls, controls3, inView1]);
     
       useEffect(() => {
         if (inView2) {
+
           controls2.start({
-            opacity: 1,
+            x: 0,
+            opacity: 1
           }),
           controls4.start({
+            x: 0,
             opacity: 1
           })
         }else {
           controls2.start({
-            opacity: 0,
+            x: -300,
+            opacity: 0
           }),
           controls4.start({
+            x: -300,
             opacity: 0
           })
         }
@@ -121,12 +132,12 @@ function Membersias({}: Props) {
 
                  <motion.div 
                  ref={ref1}
-                 initial={{ x: -800 }}
+                 initial={{ x: -300 , opacity: 0}}
                  animate={controls}
                  transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                  onMouseEnter={handleHover}
                  onMouseLeave={handleMouseLeave}
-                 className={`membersias-4 flex mx-auto w-full h-auto xl:max-w-[430px] lg:min-w-[320px] lg:max-w-[320px] xl:min-w-[430px] md:min-w-[320px] md:max-w-[320px] xl:mr-4 lg:mr-2 mr-1 rounded-t-3xl xl:p-8 lg:p-8 p-4 myfilter no-select${isButtonHovered ? ' bg-[#2B60DA] text-white border-t-2 border-t-black border-x-2 border-x-black' : ' bg-white'}`}>
+                 className={`membersias-4 flex mx-auto w-full h-auto xl:max-w-[430px] lg:min-w-[320px] lg:max-w-[320px] xl:min-w-[430px] md:min-w-[320px] md:max-w-[320px] xl:mr-4 lg:mr-2 mr-1 rounded-t-3xl xl:p-8 lg:p-8 p-4 myfilter no-select${isButtonHovered ? ' bg-[#2B60DA] text-white border-t-2 border-t-black border-x-2 border-x-black' : ' bg-white'}  `}>
                     
                  
                  
@@ -275,13 +286,13 @@ function Membersias({}: Props) {
 
                  <motion.div
                   ref={ref2}
-                  initial={{ opacity: 0 }}
+                  initial={{  opacity: 0, x: -300 }}
                   animate={controls2}
                   transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                   onMouseEnter={handleHover2}
                   onMouseLeave={handleMouseLeave2}
                   className={`membersias-5 flex mx-auto xl:max-w-[430px] xl:min-w-[430px] lg:min-w-[320px] lg:max-w-[320px] md:min-w-[320px] md:max-w-[320px] xl:ml-4 lg:ml-2 ml-1 rounded-t-3xl xl:p-8 lg:p-8 p-4 myfilter w-full md:mt-0 lg:mt-0 xl:mt-0 mt-6 no-select
-                  ${isButtonHovered2 ? ' bg-[#2B60DA] text-white border-t-2 border-t-black border-x-2 border-x-black' : ' bg-white'}`}>
+                  ${isButtonHovered2 ? ' bg-[#2B60DA] text-white border-t-2 border-t-black border-x-2 border-x-black' : ' bg-white'} ${isVisible}`}>
 
                  
                 <div className="w-full h-full flex flex-col space-y-4">
@@ -467,7 +478,7 @@ function Membersias({}: Props) {
                  </motion.div>
 
                  <motion.div 
-                     initial={{ x: -800 }}
+                     initial={{ x: -300 , opacity: 0}}
                      animate={controls3}
                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover}
@@ -484,13 +495,13 @@ function Membersias({}: Props) {
                  </motion.div>
 
                  <motion.div 
-                     initial={{ opacity: 0 }}
+                     initial={{ opacity: 0, x: -300 }}
                      animate={controls4}
                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover2}
                      onMouseLeave={handleMouseLeave2}
                      className={`membersias-7 flex mx-auto xl:max-w-[430px] xl:min-w-[430px] lg:min-w-[320px] lg:max-w-[260px] md:min-w-[320px] md:max-w-[320px] xl:ml-4 lg:ml-2 ml-1 rounded-b-3xl xl:p-8 lg:p-8 p-4 myfilter w-full md:mb-0 lg:mb-0 xl:mb-0 mb-6
-                     ${isButtonHovered2 ? ' bg-[#2B60DA] border-x-2 border-x-black' : 'bg-white '}`}>
+                     ${isButtonHovered2 ? ' bg-[#2B60DA] border-x-2 border-x-black' : 'bg-white '} ${isVisible}`}>
                  
                     
                  <div className="flex h-full w-full justify-center items-center">
