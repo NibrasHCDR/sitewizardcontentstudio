@@ -54,17 +54,17 @@ function Membersias({}: Props) {
       useEffect(() => {
         if (inView1) {
           controls.start({
-            opacity: 1
+            x: 0
           }),
           controls3.start({
-            opacity: 1
+            x: 0
           })
         }else {
           controls.start({
-            opacity: 0
+            x: -800
           }),
           controls3.start({
-            opacity: 0
+            x: -800
           })
         }
       }, [controls, controls3, inView1]);
@@ -121,7 +121,7 @@ function Membersias({}: Props) {
 
                  <motion.div 
                  ref={ref1}
-                 initial={{ opacity: 0 }}
+                 initial={{ x: -800 }}
                  animate={controls}
                  transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                  onMouseEnter={handleHover}
@@ -467,7 +467,7 @@ function Membersias({}: Props) {
                  </motion.div>
 
                  <motion.div 
-                     initial={{ opacity: 0 }}
+                     initial={{ x: -800 }}
                      animate={controls3}
                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover}
