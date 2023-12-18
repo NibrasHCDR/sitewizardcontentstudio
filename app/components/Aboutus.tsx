@@ -1,9 +1,44 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Swuip from '../components/Swuip'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 type Props = {}
 
 function Aboutus({}: Props) {
+
+  const controls = useAnimation();
+  const controls2 = useAnimation();
+
+  const { ref: ref1, inView: inView1 } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
+
+// UsseEfect que se acciona al momento de que la pantalla este en view, altera los 3 divs que contienen Iconos
+  useEffect(() => {
+    if (inView1) {
+      controls.start({
+        x: 0
+      });
+    }else {
+      controls.start({
+        x: -300,
+      });
+    }
+  }, [controls, inView1]);
+
+  useEffect(() => {
+    if (inView2) {
+      controls2.start({
+        opacity: 1,
+      });
+    }else {
+      controls2.start({
+        opacity: 0,
+      });
+    }
+  }, [controls2, inView2]);
+  
   return (
     <div className="bg-gradient-to-r from-[#2B60DA]/20 via-white to-[#2B60DA]/20 w-full h-full">
 
@@ -19,12 +54,22 @@ function Aboutus({}: Props) {
        
             </div>
 
-            <div className="aboutus-3 w-full h-full flex justify-start items-center p-8 lg:p-0 xl:p-0 no-select">
+            <motion.div 
+            ref={ref1}
+            initial={{ x: -300 }}
+            animate={controls}
+            transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
+            className="aboutus-3 w-full h-full flex justify-start items-center p-8 lg:p-0 xl:p-0 no-select">
             
                 <Swuip ></Swuip>
-            </div>
+            </motion.div>
 
-            <div className="aboutus-4">
+            <motion.div
+             ref={ref2}
+             initial={{ opacity: 1 }}
+             animate={controls2}
+             transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
+             className="aboutus-4">
             
             
                  <div className="w-full h-full lg:p-24 p-4 flex flex-col justify-center lg:items-start lg:text-start text-center">
@@ -51,7 +96,7 @@ function Aboutus({}: Props) {
 
                 
                  </div>
-            </div>
+            </motion.div>
 
         </div>
 

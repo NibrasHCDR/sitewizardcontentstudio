@@ -1,15 +1,80 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import styles from '../buttons.module.css'
 
 import { AiOutlineAntDesign } from "react-icons/ai";
 import Image from 'next/image'
 import Link from 'next/link';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 type Props = {}
 
 function About({}: Props) {
+
+  const controls = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+  const controls4 = useAnimation();
+
+  const { ref: ref1, inView: inView1 } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
+  const { ref: ref3, inView: inView3 } = useInView();
+  const { ref: ref4, inView: inView4 } = useInView();
+
+// UsseEfect que se acciona al momento de que la pantalla este en view, altera los 3 divs que contienen Iconos
+  useEffect(() => {
+    if (inView1) {
+      controls.start({
+        opacity: 1,
+        scale: 1,
+      });
+    }else {
+      controls.start({
+        opacity: 0,
+        scale: 0,
+      });
+    }
+  }, [controls, inView1]);
+
+  useEffect(() => {
+    if (inView2) {
+      controls2.start({
+        opacity: 1,
+      });
+    }else {
+      controls2.start({
+        opacity: 0,
+      });
+    }
+  }, [controls2, inView2]);
+
+  useEffect(() => {
+    if (inView3) {
+      controls3.start({
+        opacity: 1,
+      });
+    }else {
+      controls3.start({
+        opacity: 0,
+      });
+    }
+  }, [controls3, inView3]);
+
+  useEffect(() => {
+    if (inView4) {
+      controls4.start({
+        opacity: 1,
+      });
+    }else {
+      controls4.start({
+        opacity: 0,
+      });
+    }
+  }, [controls4, inView4]);
+
+  
   return (
     <div className="w-full h-full bg-gradient-to-r from-[#2B60DA]/20 via-white to-[#2B60DA]/20">
 
@@ -17,7 +82,12 @@ function About({}: Props) {
 
                   <div className="contenedor-about w-full h-full">
 
-                      <div className="about-1 bg-[#2757C6] mx-1 rounded-md hover:scale-105 transition-all duration-300 no-select">
+                      <motion.div
+                        ref={ref2}
+                        initial={{ opacity: 0 }}
+                        animate={controls2}
+                        transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
+                       className="about-1 bg-[#2757C6] mx-1 rounded-md hover:scale-105 transition-all duration-300 no-select">
                       
                          <div className="flex flex-col p-8 xl:pt-[70px] lg:pt-[80px] space-y-4">
 
@@ -32,7 +102,7 @@ function About({}: Props) {
                             <div className="flex flex-col xl:pt-11 lg:pt-11">
 
                                 <h1 className="text-white xl:text-lg lg:text-lg text-base">
-                                Un servicio de paginación web no solo resuelve la implementación de un sitio, sino que se enfrenta al desafío de mantenerlo vivo. Con Xplendev & SiteWizard, no solo aseguramos la implementación completa de tu sitio web, sino que también te ofrecemos la administración integral del mismo.
+                                Con Xplendev & SiteWizard,creamos tu sitio web y garantizamos calidad al encargarnos de su implementación y administración integral.
                                 </h1>
 
                             </div>
@@ -40,9 +110,14 @@ function About({}: Props) {
                          </div>
                           
                            
-                      </div>
+                      </motion.div>
 
-                      <div className="about-2 bg-white mx-1 border-2 border-[#2757C6] rounded-xl hover:scale-105 transition-all duration-300 no-select">
+                      <motion.div 
+                        ref={ref3}
+                        initial={{ opacity: 0 }}
+                        animate={controls3}
+                        transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
+                        className="about-2 bg-white mx-1 border-2 border-[#2757C6] rounded-xl hover:scale-105 transition-all duration-300 no-select">
 
                       <div className="flex flex-col p-8 space-y-4">
 
@@ -61,7 +136,7 @@ function About({}: Props) {
                             <div className="flex flex-col">
 
                                 <h1 className="text-black font-afacad xl:text-lg lg:text-lg text-base">
-                                En Xplendev, creamos tu sitio web desde cero. Nos involucramos contigo en el proceso de diseño para desarrollar una plataforma que se ajuste perfectamente a tus necesidades. Nuestro enfoque se basa en diseños responsivos y dinámicos, adaptados a la perfección para ti. Ahora, ¿cómo lo administras? ... ⟶
+                                 Con Xplendev, creamos una presencia web que refleja la esencia de tu marca. Nos comprometemos a desarrollar un diseño profesional y sofisticado que proyecte tu estatus y prestigio. Obtén una presencia en línea que eleve el profesionalismo de tu marca con nuestro enfoque en diseño. Ahora, ¿cómo lo administras? ... ⟶
                                 </h1>
 
                             </div>
@@ -69,11 +144,16 @@ function About({}: Props) {
                          </div>
                         
                       
-                      </div>
+                      </motion.div>
 
 
 
-                      <div className="about-3 bg-white border-2 border-[#2757C6] rounded-xl mx-1 hover:scale-105 transition-all duration-300 no-select">
+                      <motion.div 
+                      ref={ref4}
+                      initial={{ opacity: 0 }}
+                      animate={controls4}
+                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
+                      className="about-3 bg-white border-2 border-[#2757C6] rounded-xl mx-1 hover:scale-105 transition-all duration-300 no-select">
 
 
                       <div className="flex flex-col p-8 space-y-4">
@@ -93,26 +173,31 @@ function About({}: Props) {
                           <div className="flex flex-col">
 
                               <h1 className="text-black font-afacad xl:text-lg lg:text-lg text-base">
-                              ... Una vez que el diseño del producto está codificado, implementamos SiteWizard Sanity Content Studio. Este CMS te brinda el control total sobre el contenido de tu sitio web, desde textos y botones hasta imágenes y más. Con esta herramienta, gestionar y actualizar tu contenido es sencillo y completo.
+                              ... Integramos SiteWizard Sanity Content Studio en tu sitio. Este CMS te ofrece una gestión completa y sencilla del contenido de tu sitio web. Con facilidad, podrás controlar desde textos hasta imágenes y mucho más. Experimenta la comodidad de una solución que resuelve eficazmente los desafíos de administración.
                               </h1>
 
                           </div>
                           
                       </div>
 
-                    </div>
+                    </motion.div>
 
 
 
 
-                      <div className="about-4 pt-4">
+                      <motion.div
+                      ref={ref1}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={controls}
+                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}} 
+                      className="about-4 pt-4">
 
                         <div className="flex justify-center items-center">
                         <Image className="w-[140px] h-[80px] text-white rounded-full " src={'https://i.postimg.cc/gkFtQnvR/arrow-gif.gif'} width={1080} height={1080} alt={''}>
                           </Image>
                         </div>
 
-                    </div>
+                    </motion.div>
   
                     <div className="about-5 justify-center items-center text-center flex pt-8">
                     <div className="h-auto w-auto">

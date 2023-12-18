@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../buttons.module.css'
 
 import { HiBadgeCheck } from "react-icons/hi";
@@ -7,6 +7,8 @@ import { HiBadgeCheck } from "react-icons/hi";
 import { FcTemplate } from "react-icons/fc";
 
 import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
 type Props = {}
 
@@ -38,6 +40,52 @@ function Membersias({}: Props) {
         setHovered2(false);
         setButtonHovered2(false);
       };
+
+      const controls = useAnimation();
+      const controls2 = useAnimation();
+      const controls3 = useAnimation();
+      const controls4 = useAnimation();
+    
+      const { ref: ref1, inView: inView1 } = useInView();
+      const { ref: ref2, inView: inView2 } = useInView();
+
+    
+    // UsseEfect que se acciona al momento de que la pantalla este en view, altera los 3 divs que contienen Iconos
+      useEffect(() => {
+        if (inView1) {
+          controls.start({
+            opacity: 1
+          }),
+          controls3.start({
+            opacity: 1
+          })
+        }else {
+          controls.start({
+            opacity: 0
+          }),
+          controls3.start({
+            opacity: 0
+          })
+        }
+      }, [controls, controls3, inView1]);
+    
+      useEffect(() => {
+        if (inView2) {
+          controls2.start({
+            opacity: 1,
+          }),
+          controls4.start({
+            opacity: 1
+          })
+        }else {
+          controls2.start({
+            opacity: 0,
+          }),
+          controls4.start({
+            opacity: 0
+          })
+        }
+      }, [controls2, controls4, inView2]);
 
     
   return (
@@ -71,7 +119,11 @@ function Membersias({}: Props) {
 
                  </div>
 
-                 <div 
+                 <motion.div 
+                 ref={ref1}
+                 initial={{ opacity: 0 }}
+                 animate={controls}
+                 transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                  onMouseEnter={handleHover}
                  onMouseLeave={handleMouseLeave}
                  className={`membersias-4 flex mx-auto w-full h-auto xl:max-w-[430px] lg:min-w-[320px] lg:max-w-[320px] xl:min-w-[430px] md:min-w-[320px] md:max-w-[320px] xl:mr-4 lg:mr-2 mr-1 rounded-t-3xl xl:p-8 lg:p-8 p-4 myfilter no-select${isButtonHovered ? ' bg-[#2B60DA] text-white border-t-2 border-t-black border-x-2 border-x-black' : ' bg-white'}`}>
@@ -219,9 +271,13 @@ function Membersias({}: Props) {
 
                      </div>
                   
-                 </div>
+                 </motion.div>
 
-                 <div
+                 <motion.div
+                  ref={ref2}
+                  initial={{ opacity: 0 }}
+                  animate={controls2}
+                  transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                   onMouseEnter={handleHover2}
                   onMouseLeave={handleMouseLeave2}
                   className={`membersias-5 flex mx-auto xl:max-w-[430px] xl:min-w-[430px] lg:min-w-[320px] lg:max-w-[320px] md:min-w-[320px] md:max-w-[320px] xl:ml-4 lg:ml-2 ml-1 rounded-t-3xl xl:p-8 lg:p-8 p-4 myfilter w-full md:mt-0 lg:mt-0 xl:mt-0 mt-6 no-select
@@ -408,9 +464,12 @@ function Membersias({}: Props) {
 
                      
 
-                 </div>
+                 </motion.div>
 
-                 <div 
+                 <motion.div 
+                     initial={{ opacity: 0 }}
+                     animate={controls3}
+                     transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover}
                      onMouseLeave={handleMouseLeave}
                      className={`membersias-6 flex mx-auto xl:max-w-[430px] xl:min-w-[430px] lg:min-w-[320px] lg:max-w-[320px] md:min-w-[320px] md:max-w-[320px]  xl:mr-4 lg:mr-2 mr-1 rounded-b-3xl xl:p-8 lg:p-8 p-4 myfilter2 w-full md:mb-0 lg:mb-0 xl:mb-0 mb-6
@@ -422,9 +481,12 @@ function Membersias({}: Props) {
                      </button> 
                      </div>  
 
-                 </div>
+                 </motion.div>
 
-                 <div 
+                 <motion.div 
+                     initial={{ opacity: 0 }}
+                     animate={controls4}
+                     transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover2}
                      onMouseLeave={handleMouseLeave2}
                      className={`membersias-7 flex mx-auto xl:max-w-[430px] xl:min-w-[430px] lg:min-w-[320px] lg:max-w-[260px] md:min-w-[320px] md:max-w-[320px] xl:ml-4 lg:ml-2 ml-1 rounded-b-3xl xl:p-8 lg:p-8 p-4 myfilter w-full md:mb-0 lg:mb-0 xl:mb-0 mb-6
@@ -437,7 +499,7 @@ function Membersias({}: Props) {
                      </button> 
                 </div>  
 
-                 </div>
+                 </motion.div>
 
               </div>
 
