@@ -1,11 +1,11 @@
 "use client"
-import React, { useEffect } from 'react'
+import React, { useEffect, Suspense} from 'react'
 
 import { MdAdminPanelSettings } from "react-icons/md";
 import { MdDevices } from "react-icons/md";
 import { BiCustomize } from "react-icons/bi";
 
-import YouTubePlayer from './youtubeplayer/YouTubePlayer';
+const LazyYouTubePlayer = React.lazy(() => import('./youtubeplayer/YouTubePlayer'));
 import { motion, useAnimation } from 'framer-motion';
 
 import { useInView } from 'react-intersection-observer';
@@ -128,9 +128,11 @@ function Howtouse2({}: Props) {
 
                      <div className="howtouse2-3">
                          
+                     <Suspense fallback={<div>Loading...</div>}>
                                 <div className="w-full h-full">
-                                  <YouTubePlayer videoId={videoId}></YouTubePlayer>
+                                  <LazyYouTubePlayer videoId={videoId}></LazyYouTubePlayer>
                                 </div>
+                     </Suspense>
 
                      </div>
 
