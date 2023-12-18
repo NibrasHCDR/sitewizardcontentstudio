@@ -29,7 +29,7 @@ export default function Swuip() {
         className="lg:w-full lg:h-[420px]"
       >
 
-               <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[305px] min-h-[378px] no-select cursor-grab ${style.swiperSlide}`}>
+               <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[315px] min-h-[378px] no-select cursor-grab ${style.swiperSlide}`}>
 
                   <div className="w-full h-full p-2 flex flex-col space-y-2">
 
@@ -46,13 +46,12 @@ export default function Swuip() {
                       </Image> 
 
 
-                      <h1 className="font-afacad xl:text-lg lg:text-lg text-base px-6">
-                        SiteWizard Sanity Content Studio nace de la necesidad de administración de un sitio web sin necesidad de conocer el código. <br />
-                        La facil administración del contenido de tu sitio es importante para nosotros, con Sanity lo hacemos realidad
+                      <h1 className="font-afacad xl:text-lg lg:text-sm text-base px-6 py-3 lg:py-0">
+                      SiteWizard Sanity Content Studio surge de la necesidad de simplificar la gestión de sitios web sin requerir conocimientos de programación. SiteWizard facilita la administración del contenido de tu sitio, convirtiendo esta tarea en una experiencia sencilla y efectiva
                         <br />
                       </h1>
 
-                      <div className="flex w-full h-full justify-evenly px-6">
+                      <div className="flex w-full h-auto justify-evenly px-6 py-1">
 
                          <Image 
                          className="w-[130px] h-[130px] rounded-full bg-black border-4 border-white"
@@ -87,7 +86,7 @@ export default function Swuip() {
 
         </SwiperSlide>
         
-        <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[305px] min-h-[378px] no-select cursor-grab ${style.swiperSlide}`}>
+        <SwiperSlide className={` bg-white rounded-xl max-w-[390px] min-w-[315px] min-h-[378px] no-select cursor-grab ${style.swiperSlide}`}>
 
                   <div className="w-full h-full p-2 flex flex-col space-y-2">
 
@@ -104,12 +103,11 @@ export default function Swuip() {
                       </Image> 
 
 
-                      <h1 className="font-afacad xl:text-lg lg:text-lg text-base px-6">
-                        Xplendev.com parte con el objetivo principal de brindar servicios de paginación web profesionales. <br />
-                        Actualmente Xplendev es potenciado por SiteWizard Sanity Estudio entregando servicios de excelencia en calidad.
+                      <h1 className="font-afacad xl:text-lg lg:text-sm text-base px-6 py-3 lg:py-0">
+                      Xplendev.com nace con el propósito fundamental de ofrecer servicios profesionales de diseño web. En la actualidad, Xplendev se apoya en SiteWizard Sanity Content Estudio para proporcionar servicios de alta calidad y excelencia en gestión
                       </h1>
 
-                      <div className="flex w-full h-full space-x-2 space-y-4 px-6">
+                      <div className="flex w-full h-auto space-x-2 space-y-4 px-6 py-1 justify-evenly">
 
                          <Image 
                          className="w-[130px] h-[130px] rounded-full bg-black border-4 border-white"
