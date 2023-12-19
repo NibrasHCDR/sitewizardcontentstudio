@@ -7,6 +7,7 @@ import Aboutus from './components/Aboutus'
 import About from './components/About'
 import Membersias from './components/Membersias'
 import Contacto from './components/contacto/Contacto'
+import Footer from './components/footer/Footer'
 
 export default function Home() {
   return (
@@ -60,6 +61,12 @@ export default function Home() {
       <Contacto>
 
       </Contacto>
+    </section>
+
+    <section id="footer">      
+      <Footer>
+
+      </Footer>
     </section>
 
 

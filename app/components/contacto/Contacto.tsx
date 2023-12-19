@@ -14,15 +14,16 @@ function Contacto({}: Props) {
 
         <div className="w-full h-full ">
 
-            <div className={`w-full h-full  ${Styles['contenedor-contacto']}` }>
+            <div className={`w-full h-full py-8 ${Styles['contenedor-contacto']}` }>
 
-              <div className={`lg:px-24 md:pl-10 pl-4 ${Styles['contacto-1']}` }>
+              <div className={`lg:pl-24 md:pl-10 pl-4 lg:pr-8 ${Styles['contacto-1']}` }>
               
-                  <div className="w-full h-full flex flex-col space-y-2">
+                  <div className="w-full h-full flex flex-col lg:space-y-4 space-y-2 ">
                    
                   <h1 className="xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl text-white">
-                            No lo dudes y eleva tu marca a un Nivel Profesional. Experimenta la comodidad de gestionar tu sitio y disfruta del control total!
-                        </h1>
+                      Experimenta la comodidad de gestionar tu sitio desde cualquier lugar y disfruta del control total!
+                             
+                    </h1>
 
                      <div className="w-auto h-auto">
                      <button className={styles.button17} role="button">
@@ -37,10 +38,47 @@ function Contacto({}: Props) {
 
               <div className={`lg:pl-24 md:pl-10 pl-4 ${Styles['contacto-2']}` }>
 
-              <div className="w-full h-full">
-                   
- 
-                   </div>
+              <div className="w-full h-auto flex space-x-2">
+
+                  
+                     <div className="xl:h-[105px] xl:w-[105px] lg:h-[80px] lg:w-[80px] w-[50px] h-[50px] bg-white rounded-full justify-center items-center flex transition-all duration-300 hover:scale-105">
+                     <Image 
+                    className="xl:h-[75px] xl:w-[75px] lg:h-[50px] lg:w-[50px] h-[35px] w-[35px]"
+                    height={70}
+                    width={105}
+                    src={'https://i.postimg.cc/T1Q8NVYC/sslsecureicon.png'} 
+                    alt={'SSL'}>
+
+                    </Image>
+
+                     </div>
+
+
+                     <div className="xl:h-[105px] xl:w-[105px] lg:h-[80px] lg:w-[80px] w-[50px] h-[50px] bg-white rounded-full justify-center items-center flex transition-all duration-300 hover:scale-105">
+                     <Image 
+                    className="xl:h-[75px] xl:w-[75px] lg:h-[50px] lg:w-[50px] h-[35px] w-[35px]"
+                    height={70}
+                    width={105}
+                    src={'https://i.postimg.cc/3rvH6YXT/cloudserviceslogo.png'} 
+                    alt={'cloud'}>
+
+                    </Image>
+
+                     </div>
+                    
+                    <div className="xl:h-[105px] xl:w-[105px] lg:h-[80px] lg:w-[80px] w-[50px] h-[50px] bg-red-400 rounded-full justify-center items-center flex transition-all duration-300 hover:scale-105">
+
+                    <Image 
+                    className="xl:h-[75px] xl:w-[75px] lg:h-[50px] lg:w-[50px] h-[35px] w-[35px]"
+                    height={70}
+                    width={105}
+                    src={'https://i.postimg.cc/X7tfP09V/sanitylogo.png'} 
+                    alt={'sanity'}>
+
+                    </Image>
+
+                    </div>
+              </div>
                   
               </div>
 
@@ -61,7 +99,7 @@ function Contacto({}: Props) {
 
               <div className={`lg:pt-24 md:pt-10 pt-4 ${Styles['contacto-4']}` }>
               
-                  <div className="h-[110px] w-[110px] flex items-center justify-center rounded-full bg-[#2B60DA]">
+                  <div className="h-[110px] w-[110px] flex space-x-32 items-center justify-center rounded-full bg-[#2B60DA]">
 
                     <Image 
                     className="h-[70px] w-[70px]"
@@ -73,29 +111,27 @@ function Contacto({}: Props) {
                     </Image>
 
                   </div>
+
+                  
                   
               </div>
 
               <div className={`lg:pt-24 md:pt-10 pt-4 ${Styles['contacto-5']}` }>
-
+                   
               </div>
 
               <div className={`lg:pr-24 md:pr-10 pr-4 ${Styles['contacto-6']}` }>
                   <div className="h-full w-full flex">
 
-                    <Image 
-                    className="w-full h-full rounded-2xl"
-                    height={2050}
-                    width={2050}
-                    src={'https://i.postimg.cc/zDcNMYrG/polaromagnet-PIrou-Q-A8j0-unsplash.jpg'} 
-                    alt={'design'}>
-
-                    </Image>
+                   
+                  <h1 className="xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl text-white lg:pr-24 md:pr-10 md:pl-0 lg:pl-0 xl:pl-0 pl-4 md:py-0 lg:py-0 xl:py-0 py-4">
+                  No lo dudes, Ponte en contacto y eleva tu marca a un nuevo Nivel Profesional.
+                    </h1> 
 
                   </div>
               </div>
 
-              <div className={`lg:pb-24 md:pb-10 pb-4 ${Styles['contacto-7']}` }>
+              <div className={`lg:pb-24 md:pb-10 pb-4 md:px-0 lg:px-0 xl:px-0  px-4  ${Styles['contacto-7']}` }>
                   <div className="h-full w-full flex">
 
                     <Image 
@@ -118,7 +154,7 @@ function Contacto({}: Props) {
                     height={70}
                     width={105}
                     src={'https://i.postimg.cc/rpPB08s0/student.png'} 
-                    alt={'deploy'}>
+                    alt={'pcuser'}>
 
                     </Image>
 
@@ -133,7 +169,7 @@ function Contacto({}: Props) {
                     height={70}
                     width={105}
                     src={'https://i.postimg.cc/26LPnPLH/ui-design.png'} 
-                    alt={'deploy'}>
+                    alt={'smart'}>
 
                     </Image>
 
@@ -141,7 +177,7 @@ function Contacto({}: Props) {
               </div>
 
               <div className={`flex bg-[#2B60DA] rounded-r-full ${Styles['contacto-10']}` }>
-
+                  
               </div>
 
                  

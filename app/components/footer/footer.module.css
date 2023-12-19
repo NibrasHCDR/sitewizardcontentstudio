@@ -1,0 +1,26 @@
+                
+                /*  CSS GRID FOOTER SECTION  */
+
+                   /*   FOOTER MOBIL SCREEN  */
+                   @media screen and (min-width: 0px) and (max-width: 431px)  {
+
+  
+                   }
+  
+                    /*   FOOTER TABLET SCREEN  */
+                    @media screen and (min-width: 432px) and (max-width: 1023px) {
+
+                    }
+
+                    /*   FOOTER DESKTOP L SCREEN  */
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  
+
+                    }
+  
+                    /*   FOOTER DESKTOP XL SCREEN  */
+  
+                    @media screen and (min-width: 1440px) {
+
+
+                    }
