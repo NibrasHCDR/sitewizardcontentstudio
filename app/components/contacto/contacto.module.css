@@ -1,0 +1,154 @@
+                
+                /*  CSS GRID CONTACTO SECTION  */
+
+                   /*   CONTACTO MOBIL SCREEN  */
+                   @media screen and (min-width: 0px) and (max-width: 431px)  {
+
+  
+                   }
+  
+                    /*   CONTACTOTABLET SCREEN  */
+                    @media screen and (min-width: 432px) and (max-width: 1023px) {
+
+                    }
+
+                    /*   CONTACTO DESKTOP L SCREEN  */
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                        .contenedor-contacto{
+                            display: grid;
+                            grid-gap: 0.5rem;
+                            /* Creamos las columnas y sus medidad*/
+                            grid-template-columns: 1fr 0.8fr 0.4fr 0.4fr;
+                            /* Creamos las filas y sus valores de medidas*/
+                            grid-template-rows: 0.3fr 0.4fr 0.3fr 0.3fr;
+                          }
+
+                          .contacto-1{
+                            grid-column: 1/2;
+                            grid-row: 2/3;
+                            z-index: 2;
+                          }
+                          .contacto-2{
+                            grid-column: 1/2;
+                            grid-row: 3/5;
+                            z-index: 2;
+                          }
+                          .contacto-3{
+                            grid-column: 2/3;
+                            grid-row: 1/3;
+                            z-index: 2;
+                          }
+                          .contacto-4{
+                            grid-column: 3/4;
+                            grid-row: 1/2;
+                            z-index: 2;
+                          }
+                          .contacto-5{
+                            grid-column: 4/5;
+                            grid-row: 1/2;
+                            z-index: 2;
+                          }
+
+                          .contacto-6{
+                            grid-column: 3/5;
+                            grid-row: 2/3;
+                            z-index: 2;
+                          }
+
+                          .contacto-7{
+                            grid-column: 2/4;
+                            grid-row: 3/5;
+                            z-index: 2;
+                          }
+
+                          .contacto-8{
+                            grid-column: 4/5;
+                            grid-row: 3/4;
+                            z-index: 2;
+                          }
+
+                          .contacto-9{
+                            grid-column: 4/5;
+                            grid-row: 4/5;
+                            z-index: 2;
+                          }
+
+                          .contacto-10{
+                            grid-column: 1/5;
+                            grid-row: 1/5;
+                            z-index: 1;
+                          }
+
+                    }
+  
+                    /*   CONTACTO DESKTOP XL SCREEN  */
+  
+                    @media screen and (min-width: 1440px) {
+                        .contenedor-contacto{
+                            display: grid;
+                            grid-gap: 0.5rem;
+                            /* Creamos las columnas y sus medidad*/
+                            grid-template-columns: 1fr 0.4fr 0.4fr 0.4fr;
+                            /* Creamos las filas y sus valores de medidas*/
+                            grid-template-rows: 0.3fr 0.4fr 0.3fr 0.3fr;
+                          }
+
+                          .contacto-1{
+                            grid-column: 1/2;
+                            grid-row: 2/3;
+                            z-index: 2;
+                          }
+                          .contacto-2{
+                            grid-column: 1/2;
+                            grid-row: 3/5;
+                            z-index: 2;
+                          }
+                          .contacto-3{
+                            grid-column: 2/3;
+                            grid-row: 1/3;
+                            z-index: 2;
+                          }
+                          .contacto-4{
+                            grid-column: 3/4;
+                            grid-row: 1/2;
+                            z-index: 2;
+                          }
+                          .contacto-5{
+                            grid-column: 4/5;
+                            grid-row: 1/2;
+                            z-index: 2;
+                          }
+
+                          .contacto-6{
+                            grid-column: 3/5;
+                            grid-row: 2/3;
+                            z-index: 2;
+                          }
+
+                          .contacto-7{
+                            grid-column: 2/4;
+                            grid-row: 3/5;
+                            z-index: 2;
+                          }
+
+                          .contacto-8{
+                            grid-column: 4/5;
+                            grid-row: 3/4;
+                            z-index: 2;
+                          }
+
+                          .contacto-9{
+                            grid-column: 4/5;
+                            grid-row: 4/5;
+                            z-index: 2;
+                          }
+
+                          
+                          .contacto-10{
+                            grid-column: 1/5;
+                            grid-row: 1/5;
+                            z-index: 1;
+                          }
+
+
+                    }

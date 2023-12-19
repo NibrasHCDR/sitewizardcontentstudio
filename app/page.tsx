@@ -6,7 +6,7 @@ import Howtouse2 from './components/Howtouse2'
 import Aboutus from './components/Aboutus'
 import About from './components/About'
 import Membersias from './components/Membersias'
-import Contacto from './components/Contacto'
+import Contacto from './components/contacto/Contacto'
 
 export default function Home() {
   return (
