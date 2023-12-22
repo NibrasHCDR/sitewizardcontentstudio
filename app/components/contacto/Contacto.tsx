@@ -1,31 +1,63 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Image from 'next/image'
 
 import Styles from './contacto.module.css'
 import styles from '../../buttons.module.css'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 type Props = {}
 
 function Contacto({}: Props) {
+
+  
+
+  const controls = useAnimation();
+
+
+  const { ref, inView } = useInView();
+
+
+// UsseEfect que se acciona al momento de que la pantalla este en view, altera los 3 divs que contienen Iconos
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        x: 0,
+        opacity: 1
+      })
+    }else {
+      controls.start({
+        x: -300,
+        opacity: 0
+      })
+    }
+  }, [controls, inView]);
+
+  
   return (
     <div className="w-full h-full bg-gradient-to-r from-[#2B60DA]/20 via-white to-[#2B60DA]/20">
 
         <div className="w-full h-full ">
 
-            <div className={`w-full h-full py-8 ${Styles['contenedor-contacto']}` }>
+            <motion.div 
+            ref={ref}
+            initial={{ x: -300 , opacity: 0}}
+            animate={controls}
+            transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
+            className={`w-full h-full py-8 ${Styles['contenedor-contacto']}` }>
 
               <div className={`lg:pl-24 md:pl-10 pl-4 lg:pr-8 ${Styles['contacto-1']}` }>
               
-                  <div className="w-full h-full flex flex-col lg:space-y-4 space-y-2 ">
+                  <div className="w-full h-full flex flex-col lg:space-y-4 space-y-2">
                    
                   <h1 className="xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl text-white">
                       Experimenta la comodidad de gestionar tu sitio desde cualquier lugar y disfruta del control total!
                              
                     </h1>
 
-                     <div className="w-auto h-auto">
+                     <div className="w-auto h-auto md:py-0 lg:py-0 xl:py-0 py-3">
                      <button className={styles.button17} role="button">
                         Obtén SiteWizard Sanity CMS
                      </button>
@@ -182,7 +214,7 @@ function Contacto({}: Props) {
 
                  
 
-            </div>
+            </motion.div>
 
         </div>
         
