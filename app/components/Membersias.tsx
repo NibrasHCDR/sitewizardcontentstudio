@@ -278,8 +278,6 @@ function Membersias({}: Props) {
                             <h1 
                                  className={`xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl
                                   ${isButtonHovered2 ? ' text-white ' : 'text-[#2B60DA] '}`}>
-
-
                                 Exclusivo
                             </h1>
 
