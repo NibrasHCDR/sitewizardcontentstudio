@@ -70,9 +70,10 @@ function Footer({}: Props) {
                
                       <div className="flex w-full h-full space-x-4 justify-center items-center lg:justify-end">
 
-                          <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
+                         
+                          <a href='/creditos' className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
                            Creditos
-                          </h1>
+                          </a>
 
                           <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
                           Blog

@@ -56,21 +56,21 @@ function Membersias({}: Props) {
       useEffect(() => {
         if (inView1) {
           controls.start({
-            x: 0,
-            opacity: 1
+            opacity: 1,
+            scale: 1,
           }),
           controls3.start({
-            x: 0,
-            opacity: 1
+            opacity: 1,
+            scale: 1,
           })
         }else {
           controls.start({
-            x: -300,
-            opacity: 0
+            opacity: 0,
+            scale: 0,
           }),
           controls3.start({
-            x: -300,
-            opacity: 0
+            opacity: 0,
+            scale: 0,
           })
         }
       }, [controls, controls3, inView1]);
@@ -79,21 +79,21 @@ function Membersias({}: Props) {
         if (inView2) {
 
           controls2.start({
-            x: 0,
-            opacity: 1
+            opacity: 1,
+            scale: 1,
           }),
           controls4.start({
-            x: 0,
-            opacity: 1
+            opacity: 1,
+            scale: 1,
           })
         }else {
           controls2.start({
-            x: -300,
-            opacity: 0
+            opacity: 0,
+            scale: 0,
           }),
           controls4.start({
-            x: -300,
-            opacity: 0
+            opacity: 0,
+            scale: 0,
           })
         }
       }, [controls2, controls4, inView2]);
@@ -132,7 +132,7 @@ function Membersias({}: Props) {
 
                  <motion.div 
                  ref={ref1}
-                 initial={{ x: -300 , opacity: 0}}
+                 initial={{ opacity: 0, scale: 0 }}
                  animate={controls}
                  transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                  onMouseEnter={handleHover}
@@ -286,7 +286,7 @@ function Membersias({}: Props) {
 
                  <motion.div
                   ref={ref2}
-                  initial={{  opacity: 0, x: -300 }}
+                  initial={{  opacity: 0, scale: 0 }}
                   animate={controls2}
                   transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                   onMouseEnter={handleHover2}
@@ -478,7 +478,7 @@ function Membersias({}: Props) {
                  </motion.div>
 
                  <motion.div 
-                     initial={{ x: -300 , opacity: 0}}
+                     initial={{ opacity: 0, scale: 0}}
                      animate={controls3}
                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover}
@@ -495,7 +495,7 @@ function Membersias({}: Props) {
                  </motion.div>
 
                  <motion.div 
-                     initial={{ opacity: 0, x: -300 }}
+                     initial={{opacity: 0, scale: 0 }}
                      animate={controls4}
                      transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}}
                      onMouseEnter={handleHover2}
