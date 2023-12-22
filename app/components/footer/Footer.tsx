@@ -56,8 +56,8 @@ function Footer({}: Props) {
                      <div className="lg:w-[240px] w-[150px] h-auto">
                         <Link href="" className="no-select cursor-pointer">
                            <motion.img 
-                            title='Inicio'
-                             className="cursor-pointer"
+                            title='SiteWizard'
+                             className="cursor-pointer transition-all duration-500 hover:scale-105"
                              src="https://i.postimg.cc/Cx6fwg43/sitewizard-logo2.png"
                                >
                            </motion.img>
@@ -75,17 +75,17 @@ function Footer({}: Props) {
                            Creditos
                           </a>
 
-                          <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
-                          Blog
-                          </h1>
+                          <a href='http://localhost:3000/' className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
+                          Inicio
+                          </a>
 
-                          <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
-                          Servicios
-                          </h1>
+                          <a href='https://xplendev.com/' className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
+                          Xplendev
+                          </a>
 
-                          <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
+                          <a href='/contactform' className="font-afacad xl:text-xl lg:text-md md:tet-md text-md cursor-pointer">
                           Contacto
-                          </h1>
+                          </a>
 
                       </div>
 
@@ -96,7 +96,7 @@ function Footer({}: Props) {
                         <div className="w-full h-auto flex justify-center items-center lg:justify-end lg:items-end">
                           
                           <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                          © 2023 SiteWizard | By Luis Eduardo Rivera Araya
+                          © 2023 SiteWizard | By Luis Rivera - XplenDev
                           </h1>
 
                         </div>

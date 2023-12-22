@@ -10,23 +10,31 @@ import styles from '../buttons.module.css'
 
 type Props = {}
 
+
 function Header({}: Props) {
   const handleButtonClick = () => {
-    const membershipsSection = document.getElementById('memberships');
-    if (membershipsSection) {
-      membershipsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleButtonClick0 = () => {
-    const membershipsSection = document.getElementById('diseños');
+    const membershipsSection = document.getElementById('about');
     if (membershipsSection) {
       membershipsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   const handleButtonClick2 = () => {
-    const membershipsSection = document.getElementById('contact');
+    const membershipsSection = document.getElementById('howtouse');
+    if (membershipsSection) {
+      membershipsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClick3 = () => {
+    const membershipsSection = document.getElementById('membersias');
+    if (membershipsSection) {
+      membershipsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClick4 = () => {
+    const membershipsSection = document.getElementById('contacto');
     if (membershipsSection) {
       membershipsSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -75,9 +83,9 @@ useEffect(() => {
             animate={{ opacity: 1.2, x: 0 }}
             transition={{ duration: 1, ease: [0.6, 0.05, 0.5, 0.95] }} 
         className="max-w-[1240px] no-select mx-auto h-auto w-auto flex justify-between items-center p-4 text-white">
-            <Link href="https://xplendev.com/" className="no-select cursor-pointer">
+            <Link href="/" className="no-select cursor-pointer">
             <motion.img 
-              title='comon'
+              title='SiteWizard'
               className={tamañoLogo + "cursor-pointer"}
               src="https://i.postimg.cc/Cx6fwg43/sitewizard-logo2.png"
               >
@@ -85,24 +93,28 @@ useEffect(() => {
             </Link>
             <ul style={{color: `${textColor}`}} className="hidden lg:flex justify-end items-end lg:space-x-8 space-x-2">
                 <li className="pt-4">
-                <Link href="/obras">
-                <button type="button"
-                        className="font-afacad xl:text-xl lg:text-xl text-base"
-                        data-te-ripple-init>About us</button>
-                </Link>
+
+                <button 
+                        onClick={handleButtonClick}
+                        type="button"
+                        className="font-afacad xl:text-xl lg:text-xl text-base transition-all duration-500 hover:scale-105"
+                        data-te-ripple-init>Acerca de</button>
+
                 </li>
                 <li className="">
-                <Link href={"/mundodigital"}>
-                <button type="button"
-                        className="font-afacad xl:text-xl lg:text-xl text-base"
-                        data-te-ripple-init>How to use</button>
-                </Link>
+
+                <button
+                         onClick={handleButtonClick2}
+                         type="button"
+                        className="font-afacad xl:text-xl lg:text-xl text-base transition-all duration-500 hover:scale-105"
+                        data-te-ripple-init>¿Cómo funciona?</button>
+
                 </li>
                 <li className="">
                 <button type="button"
-                        className="font-afacad xl:text-xl lg:text-xl text-base"
-                        onClick={handleButtonClick0}
-                        data-te-ripple-init>Membership</button>
+                        className="font-afacad xl:text-xl lg:text-xl text-base transition-all duration-500 hover:scale-105"
+                        onClick={handleButtonClick3}
+                        data-te-ripple-init>Membersías</button>
                 </li>
 
                 
@@ -111,14 +123,16 @@ useEffect(() => {
 
             <div className="hidden lg:flex w-[240px] h-[70px] justify-between items-center">
                
-               <button className={styles.button17}>
-                Contactanos
-               </button>
+               <a 
+               href='/contactform'
+               className={styles.button17}>
+                Contáctanos
+               </a>
 
             </div>
 
             {/* Botones Móviles */}
-            <button title='comon' onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#2B60DA] transition duration-150 ease-in-out">
+            <button title='' onClick={handleNav} className="block lg:hidden z-10 hover:scale-150 hover:text-[#2B60DA] transition duration-150 ease-in-out">
                 {nav
                  ? <AiOutlineClose size={25} /> 
                  : <AiOutlineMenu  size={25} style={{color: `${textColor}`}}
@@ -135,25 +149,22 @@ useEffect(() => {
                 }
                  >
             <ul>
-            <Link href={"/obras"}>
-            <li>
-              <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
-              About us
-              </button>
-              </li>
-              </Link>
 
-              <Link href={"/mundodigital"}>
-              <li>
-              <button onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
-              How to use
+            <li onClick={handleNav}>
+              <button  onClick={handleButtonClick} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
+              Acerca de
               </button>
               </li>
-                </Link>
+
+              <li onClick={handleNav}>
+              <button  onClick={handleButtonClick2} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
+              ¿Cómo se Usa?
+              </button>
+              </li>
 
                 <li onClick={handleNav} className="p-4 text-4xl font-kanit hover:text-[#2B60DA] transition duration-150 ease-in-out hover:scale-125">
-                <button onClick={handleButtonClick0}>
-                  Membersip
+                <button onClick={handleButtonClick3}>
+                  Memebrsías
                 </button>
                 </li>
 

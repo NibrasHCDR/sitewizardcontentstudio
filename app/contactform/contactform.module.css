@@ -1,0 +1,36 @@
+                
+                /*  CSS GRID CONTACTFORM PAGE  */
+
+                   /*   CONTACTFORM PAGE MOBIL SCREEN  */
+                   @media screen and (min-width: 0px) and (max-width: 431px)  {
+
+  
+                   }
+  
+                    /*   CONTACTFORM PAGE TABLET SCREEN  */
+                    @media screen and (min-width: 432px) and (max-width: 1023px) {
+                    }
+
+                    /*   CONTACTFORM PAGE DESKTOP L SCREEN  */
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                    }
+  
+                    /*   CONTACTFORM PAGE DESKTOP XL SCREEN  */
+  
+                    @media screen and (min-width: 1440px) {
+                     .contenedor-contactform{
+                        display: grid;
+                        grid-gap: 0.5rem;
+                        /* Creamos las columnas y sus medidad*/
+                        grid-template-columns: 1fr;
+                        /* Creamos las filas y sus valores de medidas*/
+                        grid-template-rows: 1fr;
+                      }
+  
+                      .contactform-1{
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                        z-index: 2;
+                      }
+
+                    }

@@ -58,9 +58,9 @@ function Contacto({}: Props) {
                     </h1>
 
                      <div className="w-auto h-auto md:py-0 lg:py-0 xl:py-0 py-3">
-                     <button className={styles.button17} role="button">
+                     <a href='/contactform' className={styles.button17} role="button">
                         Obtén SiteWizard Sanity CMS
-                     </button>
+                     </a>
                      </div>
 
 

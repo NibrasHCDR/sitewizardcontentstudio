@@ -23,6 +23,13 @@ function Inicio({}: Props) {
     const animacionIcono_6 = useAnimation();
     const animacionImagen = useAnimation();
 
+    const handleButtonClick = () => {
+      const membershipsSection = document.getElementById('membersias');
+      if (membershipsSection) {
+        membershipsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
     //creamos un useefect que renderice la animación cuando se ejecute constrolsInicio1 y controlsInicio2
     useEffect(() => {
         const animateInicio1 = async () => {
@@ -119,7 +126,10 @@ function Inicio({}: Props) {
                     </h1>
 
                   <div className="h-auto w-auto">
-                    <button className={styles.button17} role="button">
+                    <button 
+                     onClick={handleButtonClick}
+                     className={styles.button17}
+                     role="button">
                         Obtén SiteWizard Sanity CMS
                      </button>
                   </div>

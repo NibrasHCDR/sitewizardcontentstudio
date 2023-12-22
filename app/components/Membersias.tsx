@@ -487,9 +487,11 @@ function Membersias({}: Props) {
                      ${isButtonHovered ? ' bg-[#2B60DA] border-x-2 border-x-black' : 'bg-white '}`}>
 
                      <div className="flex h-full w-full justify-center items-center">
-                     <button className={styles.button17} role="button">
+                     <a 
+                     href='/planes'
+                     className={styles.button17} role="button">
                         Ver más
-                     </button> 
+                     </a> 
                      </div>  
 
                  </motion.div>
@@ -505,9 +507,11 @@ function Membersias({}: Props) {
                  
                     
                  <div className="flex h-full w-full justify-center items-center">
-                     <button className={styles.button17} role="button">
+                     <a
+                      href='/planes'
+                      className={styles.button17} role="button">
                         Ver más
-                     </button> 
+                     </a> 
                 </div>  
 
                  </motion.div>
