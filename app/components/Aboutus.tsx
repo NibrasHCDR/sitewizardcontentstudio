@@ -88,10 +88,8 @@ function Aboutus({}: Props) {
                     </h1>
 
                     <p className="font-afacad xl:text-xl lg:text-xl text-base text-white">
-                      Acá ya tenemos un parrafo mas lárgo pero que <br />
-                      de igual manera debe tener saltos de linea y debe tener una cantidad <br />
-                      mas considerable debido a que necesitamos crear un contenido que esté <br />
-                      acorde a lo que nuestra aplicación web puede mostrar
+                      Cada sitio web es Único <br />
+                      Nos enfocamos en diseñar el sitio que más de adapte a tus necesidades como empresa. También. nos encargamos de brindar facilidad en administración del sitio de manera simple, rápida y segura.
                     </p>
 
                 
