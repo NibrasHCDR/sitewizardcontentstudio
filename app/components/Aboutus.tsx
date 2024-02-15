@@ -89,7 +89,7 @@ function Aboutus({}: Props) {
 
                     <p className="font-afacad xl:text-xl lg:text-xl text-base text-white">
                       Cada sitio web es Único <br />
-                      Nos enfocamos en diseñar el sitio que más de adapte a tus necesidades como empresa. También. nos encargamos de brindar facilidad en administración del sitio de manera simple, rápida y segura.
+                      Nos enfocamos en diseñar el sitio que más de adapte a tus necesidades como empresa. Luego, nos encargamos de brindar facilidad en administración del sitio de manera simple, rápida y segura.
                     </p>
 
                 
