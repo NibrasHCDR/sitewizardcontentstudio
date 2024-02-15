@@ -287,7 +287,7 @@ function Membersias({}: Props) {
                           <div className="w-full h-auto flex flex-col">
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Desde $139.990/
+                                Desde $309.990/
                                 <span 
                                    className={`font-rubik xl:text-lg lg:text-lg md:text-base text-base
                                   ${isButtonHovered2 ? ' text-white ' : 'text-[#2B60DA] '}`}>
@@ -419,7 +419,7 @@ function Membersias({}: Props) {
 
                      <div className="flex h-full w-full justify-center items-center">
                      <a 
-                     href='/planes'
+                     href='/'
                      className={styles.button17} role="button">
                         Ver más
                      </a> 
@@ -437,7 +437,7 @@ function Membersias({}: Props) {
                     
                  <div className="flex h-full w-full justify-center items-center">
                      <a
-                      href='/planes'
+                      href='/'
                       className={styles.button17} role="button">
                         Ver más
                      </a> 

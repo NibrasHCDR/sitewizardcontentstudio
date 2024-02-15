@@ -1,14 +1,14 @@
 "use client"
 import React, { useEffect, Suspense} from 'react'
 
-import { MdAdminPanelSettings } from "react-icons/md";
-import { MdDevices } from "react-icons/md";
-import { BiCustomize } from "react-icons/bi";
+import {  MdPublish } from "react-icons/md";
 
 const LazyYouTubePlayer = React.lazy(() => import('./youtubeplayer/YouTubePlayer'));
 import { motion, useAnimation } from 'framer-motion';
 
 import { useInView } from 'react-intersection-observer';
+import { IoLogoYoutube } from 'react-icons/io5';
+import { LuFileEdit } from 'react-icons/lu';
 
 type Props = {}
 
@@ -46,7 +46,7 @@ function Howtouse2({}: Props) {
   }, [controls2, inView]);
 
 
-  const videoId = 'TBgZGrJC9DA';
+  const videoId = 'kh_ZhpKZSIg';
 
 
   return (
@@ -64,7 +64,7 @@ function Howtouse2({}: Props) {
                            animate={controls}
                            transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}} 
                            className="font-signika xl:text-5xl lg:text-2xl md:text-2xl text-2xl">
-                            Gestiona el contenido de tu web desde cualquier dispositivo con conexión a internet de manera segura
+                            Conoce como utilizar SiteWizard Sanity para gestionar en su totalidad tu sitio web
                         </motion.h1>
 
                         <motion.h1
@@ -73,8 +73,8 @@ function Howtouse2({}: Props) {
                          animate={controls2}
                          transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}} 
                          className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                            Puedes acceder a SiteWizard Sanity desde cualquiér dispositivo con coneción a internet con tus credenciales de manera segura.
-                            Pueden ver, editar y publicar contenido hasta 20 miembros con sus respectivas credenciales
+                            Desde SiteWizard Sanity podrás ver, editar y publicar el contenido de tu sitio web creado por <a href='https://xplendev.com/'>XplenDev </a> <br></br>
+                            Conoce en el siguiente vidéo como utilizar SiteWizard Sanity Content Studio
                             
                         </motion.h1>
 
@@ -89,9 +89,9 @@ function Howtouse2({}: Props) {
                       transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}} 
                       className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#2B60DA]">
 
-                        <MdAdminPanelSettings className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                        <IoLogoYoutube className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
-                        </MdAdminPanelSettings>
+                        </IoLogoYoutube>
 
 
                       </motion.div>
@@ -103,9 +103,9 @@ function Howtouse2({}: Props) {
                        transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}} 
                         className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#FFC107]">
 
-                        <MdDevices className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                        <LuFileEdit className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
-                        </MdDevices>
+                        </LuFileEdit>
 
 
                       </motion.div>
@@ -117,9 +117,9 @@ function Howtouse2({}: Props) {
                           transition={{ duration: 0.7 , ease: [0.6, 0.05, 0.5, 0.95]}} 
                           className="xl:w-[70px] xl:h-[70px] w-[50px] h-[50px] flex items-center rounded-full justify-center bg-[#00B6DB]">
 
-                           <BiCustomize className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
+                           <MdPublish className="xl:h-[40px] xl:w-[40px] w-[25px] h-[25px] text-[white] hover:scale-95 hover:scale-y-100 duration-300">
 
-                           </BiCustomize>
+                           </MdPublish>
 
 
                       </motion.div>
