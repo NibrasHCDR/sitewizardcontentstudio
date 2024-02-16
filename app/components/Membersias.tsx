@@ -118,7 +118,7 @@ function Membersias({}: Props) {
                           <div className="w-full h-auto flex space-x-2">
 
                             <h1 className="xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl">
-                                Estandar
+                                Administrable
                             </h1>
 
                           </div>
@@ -127,11 +127,7 @@ function Membersias({}: Props) {
                           <div className="w-full h-auto flex flex-col">
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Desde $139.990/<span className="font-rubik xl:text-lg lg:text-lg md:text-base text-base">Pago único</span>
-                            </h1>
-
-                            <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Luego $32.990/<span className="font-rubik xl:text-lg lg:text-lg md:text-base text-base">Anual</span>
+                                Desde <span className="font-rubik xl:text-lg lg:text-lg md:text-base text-base">$309.990</span>
                             </h1>
 
                           </div>
@@ -159,7 +155,7 @@ function Membersias({}: Props) {
                             </HiBadgeCheck>
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Full Responsive
+                                Diseño Responsivo
                             </h1>
 
                           </div>
@@ -187,7 +183,21 @@ function Membersias({}: Props) {
                             </HiBadgeCheck>
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Dominio .cl/.com
+                                Administrador SiteWizard Sanity CMS
+                            </h1>
+
+                          </div>
+
+                         <div className="w-full h-auto flex space-x-2 items-center">
+
+                            <HiBadgeCheck 
+                                 className={`xl:text-xl lg:text-md md:tet-md text-md w-[25px] h-[25px]
+                                 ${isButtonHovered ? ' text-black ' : 'text-[#2B60DA] '}`}>
+
+                            </HiBadgeCheck>
+
+                            <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
+                                Hasta 14 Secciones
                             </h1>
 
                           </div>
@@ -278,7 +288,7 @@ function Membersias({}: Props) {
                             <h1 
                                  className={`xl:text-5xl font-signika lg:text-2xl md:text-2xl text-2xl
                                   ${isButtonHovered2 ? ' text-white ' : 'text-[#2B60DA] '}`}>
-                                Exclusivo
+                                Tienda Online
                             </h1>
 
                           </div>
@@ -287,20 +297,11 @@ function Membersias({}: Props) {
                           <div className="w-full h-auto flex flex-col">
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Desde $309.990/
+                                Desde 
                                 <span 
                                    className={`font-rubik xl:text-lg lg:text-lg md:text-base text-base
                                   ${isButtonHovered2 ? ' text-white ' : 'text-[#2B60DA] '}`}>
-                                    Pago único
-                                </span>
-                            </h1>
-
-                            <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Luego $32.990/                                
-                                <span 
-                                   className={`font-rubik xl:text-lg lg:text-lg md:text-base text-base
-                                  ${isButtonHovered2 ? ' text-white ' : 'text-[#2B60DA] '}`}>
-                                    Anual
+                                    $489.990
                                 </span>
                             </h1>
 
@@ -329,7 +330,7 @@ function Membersias({}: Props) {
                             </HiBadgeCheck>
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Full Responsive
+                                Diseño Responsivo
                             </h1>
 
                           </div>
@@ -372,7 +373,21 @@ function Membersias({}: Props) {
                             </HiBadgeCheck>
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Dominio .cl/.com
+                                Carrito de Compras
+                            </h1>
+
+                          </div>
+
+                                                   <div className="w-full h-auto flex space-x-2 items-center">
+
+                            <HiBadgeCheck 
+                                 className={`xl:text-xl lg:text-md md:tet-md text-md w-[25px] h-[25px]
+                                 ${isButtonHovered2 ? ' text-black ' : 'text-[#2B60DA] '}`}>
+
+                            </HiBadgeCheck>
+
+                            <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
+                                Carrito de Compras
                             </h1>
 
                           </div>
@@ -400,7 +415,7 @@ function Membersias({}: Props) {
                             </HiBadgeCheck>
 
                             <h1 className="font-afacad xl:text-xl lg:text-md md:tet-md text-md">
-                                Certificado SSL
+                                Pasarela de Pago
                             </h1>
 
                           </div>
